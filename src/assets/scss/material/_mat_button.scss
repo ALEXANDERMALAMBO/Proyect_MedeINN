@@ -1,0 +1,30 @@
+.mat-button {
+  border-radius: 1.3rem;
+  background-color:red;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  transition: all 0.2s;
+  &:hover {
+    background-color: darken(#004466, 5);
+    color: white;
+  }
+  &.secondary {
+    background-color: #666666;
+    &:hover {
+      background-color: darken(#666666, 5);
+      color: white;
+    }
+  }
+  &.button-new-object {
+    background-color: $color-green-main;
+    text-transform: uppercase;
+    color: $color-text;
+    line-height: 1.6;
+    margin-left: auto;
+    transition: all 0.2s;
+    &:hover {
+      background-color: $color-green-main-hover;
+    }
+  }
+}

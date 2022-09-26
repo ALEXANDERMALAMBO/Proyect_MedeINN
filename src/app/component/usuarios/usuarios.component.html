@@ -1,0 +1,67 @@
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Usuarios</h4>
+                <h5 class="card-subtitle text-muted">Usuarios registrados en el sistema de Agendamiento SIC</h5>
+                <button class="btn btn-primary" (click)="crear()"> Crear Usuario</button>
+                <div class="table-responsive">
+                    <table class="table align-middle text-nowrap">
+
+                        <thead>
+                            <tr>
+                                <th class="text-dark font-medium fs-4">Name</th>
+                                <th class="text-dark font-medium fs-4">Email</th>
+                                <th class="text-dark font-medium fs-4">Rol</th>
+                                <th class="text-dark font-medium fs-4">Password</th>
+                                <th class="text-dark font-medium fs-4">Fecha Creación</th>
+                                <th class="text-dark font-medium fs-4">Opciones</th>
+                                <td> <i class="fa-solid fa-pen-to-square text-info"></i>
+                                </td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr *ngFor='let ts of listUsuarios'>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <img src="assets/images/users/docente.jpg" alt="user" width="45"
+                                            class="rounded-circle">
+                                        <div class="ms-3">
+                                            <h5 class="mb-0 font-medium">{{ts.name}}</h5>
+                                            <span class="text-muted"></span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="fs-4">
+                                   {{ts.email}}
+                                </td>
+                                <td>
+                                    ADMIN
+                                </td>
+                                <td>
+                                    ************
+                                </td>
+                                <td class="fs-4">
+                                    {{ts.created_at}}
+                                 </td>
+                                <td>
+                                    <!-- <h5 class="mb-0 fw-normal">{{ts.budget}}</h5> -->
+                                    <button id="btn1" class="btn btn-outline-success" aria-label="ver">
+                                        <i class="bi bi-eye"></i>
+                                    </button>
+                                    <button id="btn1" class="btn btn-outline-primary" aria-label="Editar">
+                                        <i class="bi bi-pencil-square"></i>
+                                    </button>
+                                    <button id="btn1" class="btn btn-outline-danger" aria-label="Eliminar">
+                                        <i class="bi bi-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

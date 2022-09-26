@@ -1,0 +1,34 @@
+<mat-card class="example-card">
+    <mat-card-header>
+        <mat-card-title>Proyecto MedeInn</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+   
+        <form (submit)="loginSubmit($event)" [formGroup]="loginForm" class="form-row">
+            <label class="end">Inicio de Sesión</label>
+            <div class="div-2row">
+                <div class="form-group">
+                    <label class="grid">Usuario*</label>
+                    <input type="email" class="form-control input-govco" placeholder="Email" required formControlName="email">
+                </div>
+
+                <div class="form-group">
+                    <label class="grid">Contraseña*</label>
+                    <input type="password" class="form-control input-govco" placeholder="Password" required formControlName="password">
+                </div>
+
+
+            </div>
+            <div>
+                <mat-error>{{errorLogin}}</mat-error>
+            </div>
+            <!-- <button class="button-form">
+                Ingresar
+            </button> -->
+
+            <div class="p-2">
+                <a class="btn-round btn-high" (click)="loginSubmit($event)">Ingresar</a>
+            </div>
+        </form>
+    </mat-card-content>
+</mat-card>

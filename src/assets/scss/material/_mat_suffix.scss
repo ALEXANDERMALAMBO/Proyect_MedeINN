@@ -1,0 +1,20 @@
+.mat-form-field-suffix {
+  button {
+    background-color: transparent;
+    border: none;
+  }
+}
+&.dark-mode {
+  .mat-form-field-suffix {
+    .mat-icon {
+      color: $color-green-main-hover;
+    }
+    button {
+      &:hover {
+        .mat-icon {
+          color: $color-green-main;
+        }
+      }
+    }
+  }
+}

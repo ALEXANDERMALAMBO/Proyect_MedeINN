@@ -1,0 +1,14 @@
+.mat-form-field,
+.mat-form-field-can-float.mat-form-field-should-float {
+  .mat-form-field-infix {
+    padding-top: 1.2rem;
+  }
+  @import "mat_label";
+  @import "mat_input";
+  @import "mat_suffix";
+  @import "mat_select";
+}
+
+.fluid .mat-form-field {
+  width: 100%;
+}

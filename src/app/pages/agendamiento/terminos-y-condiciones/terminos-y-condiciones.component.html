@@ -1,0 +1,228 @@
+<mat-card class="example-card">
+    <mat-card-header>
+        <mat-card-title>Sistema De Agendamiento Digital</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <div class="grid">
+            <div>
+                <iframe class="video" src="https://www.youtube.com/embed/ETjA4DfhuwQ" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <table class="check-text">
+                    <tr>
+                        <td>
+                            <div class="checkbox-govco">
+                                <input type="checkbox" id="check1" (change)="selectItem($event)"[checked]="select" />
+                                <label class="box" for="check1">
+                                    Las solicitudes realizadas por personas naturales o jurídicas, deberán efectuarse
+                                    formalmente por medio del link del formulario anexo.
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkbox-govco">
+                                <input type="checkbox" id="check2" (change)="selectItem($event)"[checked]="select" />
+                                <label class="box" for="check2">
+                                    El solicitante deberá garantizar una inscripción en el formulario mínima de (25)
+                                    personas
+                                    para coordinar el agendamiento de la actividad académica por parte de la SIC.
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkbox-govco">
+                                <input type="checkbox" id="check3" (change)="selectItem($event)"[checked]="select" />
+                                <label class="box" for="check3">
+                                    Se deberá cumplir con el mínimo de aforo (2) días antes de la jornada o será
+                                    cancelada la
+                                    capacitación. Este cumplimiento deberá ser certificado escribiendo al correo
+                                    formacion@sic.gov.co.
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkbox-govco">
+                                <input type="checkbox" id="check4" (change)="selectItem($event)" [checked]="select" />
+                                <label class="box" for="check4">
+                                    La solicitud deberá hacerse como mínimo con un (1) mes de anticipación a la(s)
+                                    fecha(s)
+                                    sugerida(s)
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+
+
+                    <!-- <tr>
+                        <td>
+                            <mat-checkbox (change)="selectItem($event)" [checked]="select"  class="example-margin" color="primary"></mat-checkbox>
+                        </td>
+                        <td>Las solicitudes realizadas por personas naturales o jurídicas, deberán efectuarse
+                            formalmente por medio del link del formulario anexo.<br /><br /></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <mat-checkbox (change)="selectItem($event)" [checked]="select"  class="example-margin" color="primary"></mat-checkbox>
+                        </td>
+                        <td>El solicitante deberá garantizar una inscripción en el formulario mínima de (25) personas
+                            para coordinar el agendamiento de la actividad académica por parte de la SIC.<br /><br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <mat-checkbox (change)="selectItem($event)" [checked]="select"  class="example-margin" color="primary"></mat-checkbox>
+                        </td>
+                        <td>Se deberá cumplir con el mínimo de aforo (2) días antes de la jornada o será cancelada la
+                            capacitación. Este cumplimiento deberá ser certificado escribiendo al correo
+                            formacion@sic.gov.co.<br /> <br /></td>
+                    </tr> -->
+                </table>
+            </div>
+            <div>
+                <div class="card-terms">
+                    <h1><strong>Términos y Condiciones de nuestros servicios</strong></h1>
+                    <label>A continuación encontrará las políticas establecidas para atender la solicitud de las jornadas
+                        académicas, charlas de divulgación y socialización de los temas misionales de la SIC:</label>
+                </div>
+                <table>
+                    
+                    <tr>
+                        <td>
+                            <div class="checkbox-govco">
+                                <input type="checkbox" id="check5" (change)="selectItem($event)"[checked]="select" />
+                                <label class="box" for="check5">
+                                    La programación estará sujeta al cronograma de actividades y disponibilidad de agenda de la
+                            SIC.
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkbox-govco">
+                                <input type="checkbox" id="check6" (change)="selectItem($event)"[checked]="select" />
+                                <label class="box" for="check6">
+                                    En caso de no ser posible realizar la actividad en la fecha solicitada, la SIC se pondrá en
+                                    contacto con el interesado para definir una nueva fecha.
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkbox-govco">
+                                <input type="checkbox" id="check7" (change)="selectItem($event)"[checked]="select" />
+                                <label class="box" for="check7">
+                                    Una vez recibida la solicitud, un funcionario del Grupo de Formación de la SIC se pondrá en
+                            contacto con la persona que solicita la actividad, para definir las condiciones específicas
+                            del servicio.
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkbox-govco">
+                                <input type="checkbox" id="check8" (change)="selectItem($event)"[checked]="select" />
+                                <label class="box" for="check8">
+                                    La Superintendencia de Industria y Comercio no transferirá ningún dato personal de las
+                            personas inscritas y/o participantes, lo anterior bajo los parámetros de la normatividad
+                            vigente en materia de Protección de Datos Personales (Ley 1581 del 2012).
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkbox-govco">
+                                <input type="checkbox" (change)="selectItem($event)" [checked]="select" id="check9"/>
+                                <label class="box" for="check9">
+                                    Durante la ejecución de la jornada el solicitante debe garantizar la conexión de los
+                            inscritos, si trascurridos 15 minutos a partir de la hora de inicio pactada, no se cuenta
+                            con el aforo de un mínimo de 15 asistentes no se realizará la jornada y la misma será
+                            cancelada.
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- <tr>
+                        <td>
+                            <mat-checkbox (change)="selectItem($event)" [checked]="select" class="example-margin"
+                                color="primary"></mat-checkbox>
+                        </td>
+                        <td>La solicitud deberá hacerse como mínimo con un (1) mes de anticipación a la(s) fecha(s)
+                            sugerida(s).<br /><br /></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <mat-checkbox (change)="selectItem($event)" [checked]="select" class="example-margin"
+                                color="primary"></mat-checkbox>
+                        </td>
+                        <td>La programación estará sujeta al cronograma de actividades y disponibilidad de agenda de la
+                            SIC.<br /><br /></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <mat-checkbox (change)="selectItem($event)" [checked]="select" class="example-margin"
+                                color="primary"></mat-checkbox>
+                        </td>
+                        <td>En caso de no ser posible realizar la actividad en la fecha solicitada, la SIC se pondrá en
+                            contacto con el interesado para definir una nueva fecha.<br /><br /></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <mat-checkbox (change)="selectItem($event)" [checked]="select" class="example-margin"
+                                color="primary"></mat-checkbox>
+                        </td>
+                        <td>Una vez recibida la solicitud, un funcionario del Grupo de Formación de la SIC se pondrá en
+                            contacto con la persona que solicita la actividad, para definir las condiciones específicas
+                            del servicio.<br /><br /></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <mat-checkbox (change)="selectItem($event)" [checked]="select" class="example-margin"
+                                color="primary"></mat-checkbox>
+                        </td>
+                        <td>La Superintendencia de Industria y Comercio no transferirá ningún dato personal de las
+                            personas inscritas y/o participantes, lo anterior bajo los parámetros de la normatividad
+                            vigente en materia de Protección de Datos Personales (Ley 1581 del 2012).<br /><br /></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <mat-checkbox (change)="selectItem($event)" [checked]="select" class="example-margin"
+                                color="primary"></mat-checkbox>
+                        </td>
+                        <td>Durante la ejecución de la jornada el solicitante debe garantizar la conexión de los
+                            inscritos, si trascurridos 15 minutos a partir de la hora de inicio pactada, no se cuenta
+                            con el aforo de un mínimo de 15 asistentes no se realizará la jornada y la misma será
+                            cancelada.<br /><br /></td>
+                    </tr> -->
+                </table>
+                <div style="text-align: center;">
+                    <div class="checkbox-govco">
+                        <input type="checkbox" (change)="selectTodo($event)"id="check10" />
+                        <label class="box" for="check10">
+                          Seleccionar todo
+                        </label>
+                    </div>
+                    <!-- <mat-checkbox class="example-margin" color="primary" style="margin-right: 5%;"
+                        (change)="selectTodo($event)">Seleccionar Todo</mat-checkbox> -->
+                    <!-- <button class="button-form" (click)="continuar()">
+                        Aceptar
+                    </button> -->
+                    <div class="p-2">
+                        <a class="btn-round btn-high" (click)="continuar()">Aceptar</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </mat-card-content>
+</mat-card>

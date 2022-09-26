@@ -1,0 +1,1040 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>nice-admin-angular documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">nice-admin-angular documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  FormularioJornadasComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/component/formulario-jornadas/formulario-jornadas.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-formulario-jornadas</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./formulario-jornadas.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./formulario-jornadas.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#idAction" >idAction</a>
+                            </li>
+                            <li>
+                                <a href="#idJornada" >idJornada</a>
+                            </li>
+                            <li>
+                                <a href="#JornadaForm" >JornadaForm</a>
+                            </li>
+                            <li>
+                                <a href="#listDocentes" >listDocentes</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getDocentes" >getDocentes</a>
+                            </li>
+                            <li>
+                                <a href="#guardar" >guardar</a>
+                            </li>
+                            <li>
+                                <a href="#loadInfo" >loadInfo</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(_spinner: <a href="../injectables/SpinnerService.html" target="_self">SpinnerService</a>, _dialog: MatDialog, _router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, _route: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, _jornadasService: <a href="../injectables/JornadasService.html" target="_self">JornadasService</a>, _docentesService: <a href="../injectables/DocentesService.html" target="_self">DocentesService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/component/formulario-jornadas/formulario-jornadas.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>_spinner</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SpinnerService.html" target="_self" >SpinnerService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_dialog</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatDialog</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_route</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_jornadasService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/JornadasService.html" target="_self" >JornadasService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_docentesService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DocentesService.html" target="_self" >DocentesService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getDocentes"></a>
+                    <span class="name">
+                        <span ><b>getDocentes</b></span>
+                        <a href="#getDocentes"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getDocentes()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="73"
+                            class="link-to-prism">src/app/component/formulario-jornadas/formulario-jornadas.component.ts:73</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="guardar"></a>
+                    <span class="name">
+                        <span ><b>guardar</b></span>
+                        <a href="#guardar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>guardar()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="80"
+                            class="link-to-prism">src/app/component/formulario-jornadas/formulario-jornadas.component.ts:80</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadInfo"></a>
+                    <span class="name">
+                        <span ><b>loadInfo</b></span>
+                        <a href="#loadInfo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>loadInfo()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="52"
+                            class="link-to-prism">src/app/component/formulario-jornadas/formulario-jornadas.component.ts:52</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="43"
+                            class="link-to-prism">src/app/component/formulario-jornadas/formulario-jornadas.component.ts:43</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="idAction"></a>
+                    <span class="name">
+                        <span ><b>idAction</b></span>
+                        <a href="#idAction"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/component/formulario-jornadas/formulario-jornadas.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="idJornada"></a>
+                    <span class="name">
+                        <span ><b>idJornada</b></span>
+                        <a href="#idJornada"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/component/formulario-jornadas/formulario-jornadas.component.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="JornadaForm"></a>
+                    <span class="name">
+                        <span ><b>JornadaForm</b></span>
+                        <a href="#JornadaForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/component/formulario-jornadas/formulario-jornadas.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listDocentes"></a>
+                    <span class="name">
+                        <span ><b>listDocentes</b></span>
+                        <a href="#listDocentes"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>any[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/component/formulario-jornadas/formulario-jornadas.component.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { FormControl, FormGroup } from &#x27;@angular/forms&#x27;;
+import { SpinnerService } from &#x27;../../core/services/spinner/spinner.service&#x27;;
+import { MatDialog } from &#x27;@angular/material/dialog&#x27;;
+import { ActivatedRoute, Router } from &#x27;@angular/router&#x27;;
+import { JornadasService } from &#x27;../../core/services/jornadas/jornadas.service&#x27;;
+import { DocentesService } from &#x27;../../core/services/docentes/docentes.service&#x27;;
+
+@Component({
+  selector: &#x27;app-formulario-jornadas&#x27;,
+  templateUrl: &#x27;./formulario-jornadas.component.html&#x27;,
+  styleUrls: [&#x27;./formulario-jornadas.component.scss&#x27;]
+})
+export class FormularioJornadasComponent implements OnInit {
+  JornadaForm: FormGroup;
+  idAction: any;
+  idJornada: any;
+  listDocentes: any[] &#x3D; [];
+  constructor(
+    private _spinner: SpinnerService,
+    private _dialog: MatDialog,
+    private _router: Router,
+    private _route: ActivatedRoute,
+    private _jornadasService: JornadasService,
+    private _docentesService: DocentesService
+  ) {
+    this.JornadaForm &#x3D; new FormGroup({
+      nombre: new FormControl(&#x27;&#x27;),
+      codigo: new FormControl(&#x27;&#x27;),
+      tipo: new FormControl(&#x27;PRESENCIAL&#x27;),
+      tema: new FormControl(&#x27;&#x27;),
+      subtema: new FormControl(&#x27;&#x27;),
+      lugar: new FormControl(&#x27;&#x27;),
+      id_docente_principal: new FormControl(&#x27;&#x27;),
+      id_docente_suplente: new FormControl(&#x27;&#x27;),
+      fecha: new FormControl(&#x27;&#x27;),
+      hora_inicio: new FormControl(&#x27;&#x27;),
+      hora_fin: new FormControl(&#x27;&#x27;),
+      enabled: new FormControl(1),
+    });
+  }
+
+  ngOnInit(): void {
+    this.idAction &#x3D; this._route.snapshot.params[&#x27;idAction&#x27;]
+    this.idJornada &#x3D; this._route.snapshot.params[&#x27;idJornada&#x27;]
+    this.getDocentes();
+    if (this.idAction !&#x3D; 1) {
+      this.loadInfo()
+    }
+  }
+
+  loadInfo() {
+    this._jornadasService.obtenerById(this.idJornada).subscribe((data: any) &#x3D;&gt; {
+      if (data.id) {
+        console.log(data);
+
+        this.JornadaForm.controls[&#x27;nombre&#x27;].setValue(data.nombre);
+        this.JornadaForm.controls[&#x27;tipo&#x27;].setValue(data.tipo);
+        this.JornadaForm.controls[&#x27;enabled&#x27;].setValue(data.enabled);
+        this.JornadaForm.controls[&#x27;codigo&#x27;].setValue(data.codigo);
+        this.JornadaForm.controls[&#x27;tema&#x27;].setValue(data.tema);
+        this.JornadaForm.controls[&#x27;subtema&#x27;].setValue(data.subtema);
+        this.JornadaForm.controls[&#x27;lugar&#x27;].setValue(data.lugar);
+        this.JornadaForm.controls[&#x27;id_docente_principal&#x27;].setValue(data.id_docente_principal);
+        this.JornadaForm.controls[&#x27;id_docente_suplente&#x27;].setValue(data.id_docente_suplente);
+        this.JornadaForm.controls[&#x27;fecha&#x27;].setValue(data.fecha);
+        this.JornadaForm.controls[&#x27;hora_inicio&#x27;].setValue(data.hora_inicio);
+        this.JornadaForm.controls[&#x27;hora_fin&#x27;].setValue(data.hora_fin);
+      }
+    })
+  }
+
+  getDocentes() {
+    this._spinner.show()
+    this._docentesService.obtener().subscribe((data: any) &#x3D;&gt; {
+      this._spinner.hide()
+      this.listDocentes &#x3D; data.data;
+    })
+  }
+  guardar() {
+    this._spinner.show()
+    let data &#x3D; {
+      nombre: this.JornadaForm.value.nombre,
+      tipo: this.JornadaForm.value.tipo,
+      enabled: this.JornadaForm.value.enabled,
+      codigo: this.JornadaForm.value.codigo,
+      imagen: &#x27;&#x27;,
+      tema: this.JornadaForm.value.tema,
+      subtema: this.JornadaForm.value.subtema,
+      lugar: this.JornadaForm.value.lugar,
+      id_docente_principal: this.JornadaForm.value.id_docente_principal,
+      id_docente_suplente: this.JornadaForm.value.id_docente_suplente,
+      fecha: this.JornadaForm.value.fecha,
+      hora_inicio: this.JornadaForm.value.hora_inicio,
+      hora_fin: this.JornadaForm.value.hora_fin
+    }
+
+    console.log(data);
+    if (this.idAction &#x3D;&#x3D; 1) {
+      this._jornadasService.registrar(data).subscribe((resp: any) &#x3D;&gt; {
+        this._spinner.hide()
+        console.log(resp);
+        if (resp.id) {
+          alert(&#x27;Jornada creada con exito&#x27;);
+          this._router.navigate([&#x27;/dashboard/component/jornadas&#x27;]);
+        }
+      })
+    } else {
+      this._jornadasService.actualizar(data, this.idJornada).subscribe((resp: any) &#x3D;&gt; {
+        this._spinner.hide()
+        console.log(resp);
+        if (resp.id) {
+          // alert(&#x27;Empresa creada con exito&#x27;);
+          this._router.navigate([&#x27;/dashboard/component/jornadas&#x27;]);
+        }
+      })
+    }
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;mat-card class&#x3D;&quot;example-card&quot;&gt;
+  &lt;mat-card-header&gt;
+    &lt;mat-card-title&gt;Formulario de Jornadas&lt;/mat-card-title&gt;
+  &lt;/mat-card-header&gt;
+  &lt;mat-card-content&gt;
+    &lt;form class&#x3D;&quot;form-group&quot;[formGroup]&#x3D;&quot;JornadaForm&quot;&gt;
+      &lt;div class&#x3D;&quot;grid&quot;&gt;
+        &lt;div class&#x3D;&quot;form-group gov-co-form-group gov-co-valido&quot;&gt;
+          &lt;label for&#x3D;&quot;&quot;&gt;Nombre de la Jornada&lt;/label&gt;
+          &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control gov-co-form-control&quot; formControlName&#x3D;&quot;nombre&quot; required/&gt;
+        &lt;/div&gt;
+        &lt;!-- &lt;div class&#x3D;&quot;form-group col-sm&quot;&gt;
+          &lt;label&gt;Nombre de la Jornada&lt;/label&gt;
+          &lt;input class&#x3D;&quot;form-control&quot; formControlName&#x3D;&quot;nombre&quot; required/&gt;
+        &lt;/div&gt; --&gt;
+        &lt;div class&#x3D;&quot;form-group gov-co-form-group gov-co-valido&quot;&gt;
+          &lt;label for&#x3D;&quot;&quot;&gt;Codigo&lt;/label&gt;
+          &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control gov-co-form-control&quot; formControlName&#x3D;&quot;codigo&quot; required/&gt;
+        &lt;/div&gt;
+        &lt;!-- &lt;div class&#x3D;&quot;form-group col-sm&quot;&gt;
+          &lt;label&gt;Codigo&lt;/label&gt;
+          &lt;input class&#x3D;&quot;form-control&quot; formControlName&#x3D;&quot;codigo&quot; required/&gt;
+        &lt;/div&gt; --&gt;
+        &lt;div class&#x3D;&quot;form-group gov-co-form-group&quot;&gt;
+          &lt;div class&#x3D;&quot;gov-co-dropdown&quot;&gt;
+            &lt;label for&#x3D;&quot;selector-simple&quot;&gt;Tipo de Jornada&lt;/label&gt;
+            &lt;select id&#x3D;&quot;selector-simple&quot; class&#x3D;&quot;selectpicker form-control&quot; title&#x3D;&quot;selected&quot; formControlName&#x3D;&quot;tipo&quot; required&gt;
+              &lt;option selected&gt;PRESENCIAL&lt;/option&gt;
+              &lt;option&gt;VIRTUAL&lt;/option&gt;
+            &lt;/select&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- &lt;div class&#x3D;&quot;form-group col-sm&quot;&gt;
+          &lt;label&gt;Tipo de Jornada&lt;/label&gt;
+          &lt;select name&#x3D;&quot;select&quot; formControlName&#x3D;&quot;tipo&quot; required&gt;
+            &lt;option selected&gt;PRESENCIAL&lt;/option&gt;
+            &lt;option&gt;VIRTUAL&lt;/option&gt;
+          &lt;/select&gt;
+        &lt;/div&gt; --&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;grid&quot;&gt;
+        &lt;div class&#x3D;&quot;form-group gov-co-form-group gov-co-valido&quot;&gt;
+          &lt;label for&#x3D;&quot;&quot;&gt;Tema&lt;/label&gt;
+          &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control gov-co-form-control&quot; formControlName&#x3D;&quot;tema&quot; required/&gt;
+        &lt;/div&gt;
+        &lt;!-- &lt;div class&#x3D;&quot;form-group col-sm&quot;&gt;
+          &lt;label&gt;Tema&lt;/label&gt;
+          &lt;input class&#x3D;&quot;form-control&quot; formControlName&#x3D;&quot;tema&quot; required/&gt;
+        &lt;/div&gt; --&gt;
+        &lt;div class&#x3D;&quot;form-group gov-co-form-group gov-co-valido&quot;&gt;
+          &lt;label for&#x3D;&quot;&quot;&gt;Subtema&lt;/label&gt;
+          &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control gov-co-form-control&quot; formControlName&#x3D;&quot;subtema&quot; required/&gt;
+        &lt;/div&gt;
+        &lt;!-- &lt;div class&#x3D;&quot;form-group col-sm&quot;&gt;
+          &lt;label&gt;Subtema&lt;/label&gt;
+          &lt;input class&#x3D;&quot;form-control&quot; formControlName&#x3D;&quot;subtema&quot; required/&gt;
+        &lt;/div&gt; --&gt;
+        &lt;div class&#x3D;&quot;form-group gov-co-form-group gov-co-valido&quot;&gt;
+          &lt;label for&#x3D;&quot;&quot;&gt;Lugar&lt;/label&gt;
+          &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control gov-co-form-control&quot; formControlName&#x3D;&quot;lugar&quot; required/&gt;
+        &lt;/div&gt;
+        &lt;!-- &lt;div class&#x3D;&quot;form-group col-sm&quot;&gt;
+          &lt;label&gt;Lugar&lt;/label&gt;
+          &lt;input class&#x3D;&quot;form-control&quot; formControlName&#x3D;&quot;lugar&quot; required/&gt;
+        &lt;/div&gt; --&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;grid&quot;&gt;
+        &lt;div class&#x3D;&quot;form-group gov-co-form-group&quot;&gt;
+          &lt;div class&#x3D;&quot;gov-co-dropdown&quot;&gt;
+            &lt;label for&#x3D;&quot;&quot;&gt;Docente principal&lt;/label&gt;
+            &lt;select id&#x3D;&quot;&quot; class&#x3D;&quot;selectpicker form-control&quot; title&#x3D;&quot;Docente&quot; formControlName&#x3D;&quot;id_docente_principal&quot; &gt;
+              &lt;option *ngFor&#x3D;&quot;let docente of listDocentes&quot; [value]&#x3D;&quot;docente.id&quot; required &gt;
+                {{ docente.nombre + &quot; - &quot; + docente.identificacion}}
+              &lt;/option&gt;
+            &lt;/select&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- &lt;div class&#x3D;&quot;form-group col-sm&quot;&gt;
+          &lt;label&gt;Docente principal&lt;/label&gt;
+          &lt;select name&#x3D;&quot;select&quot;  formControlName&#x3D;&quot;id_docente_principal&quot;&gt;
+            &lt;option value&#x3D;&quot;&quot; selected&gt;Seleccione el docente&lt;/option&gt;
+            &lt;option *ngFor&#x3D;&quot;let docente of listDocentes&quot; [value]&#x3D;&quot;docente.id&quot; required&gt;
+              {{ docente.nombre + &quot; - &quot; + docente.identificacion}}
+            &lt;/option&gt;
+          &lt;/select&gt;
+        &lt;/div&gt; --&gt;
+        &lt;div class&#x3D;&quot;form-group gov-co-form-group&quot;&gt;
+          &lt;div class&#x3D;&quot;gov-co-dropdown&quot;&gt;
+            &lt;label for&#x3D;&quot;&quot;&gt;Docente suplente&lt;/label&gt;
+            &lt;select id&#x3D;&quot;&quot; class&#x3D;&quot;selectpicker form-control&quot; title&#x3D;&quot;Docente&quot; formControlName&#x3D;&quot;id_docente_suplente&quot; &gt;
+              &lt;option *ngFor&#x3D;&quot;let docente of listDocentes&quot; [value]&#x3D;&quot;docente.id&quot; required&gt;
+                {{ docente.nombre + &quot; - &quot; + docente.identificacion}}
+              &lt;/option&gt;
+            &lt;/select&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- &lt;div class&#x3D;&quot;form-group col-sm&quot;&gt;
+          &lt;label&gt;Docente suplente&lt;/label&gt;
+          &lt;select name&#x3D;&quot;select&quot;  formControlName&#x3D;&quot;id_docente_suplente&quot;&gt;
+            &lt;option value&#x3D;&quot;&quot; selected&gt;Seleccione el docente&lt;/option&gt;
+            &lt;option *ngFor&#x3D;&quot;let docente of listDocentes&quot; [value]&#x3D;&quot;docente.id&quot; required&gt;
+              {{ docente.nombre + &quot; - &quot; + docente.identificacion}}
+            &lt;/option&gt;
+          &lt;/select&gt;
+        &lt;/div&gt; --&gt;
+        &lt;div class&#x3D;&quot;form-group gov-co-form-group&quot;&gt;
+          &lt;label for&#x3D;&quot;&quot;&gt;fecha&lt;/label&gt;
+          &lt;input class&#x3D;&quot;form-control&quot; formControlName&#x3D;&quot;fecha&quot;  required type&#x3D;&quot;date&quot; /&gt;
+       &lt;/div&gt;
+
+        &lt;!-- &lt;div class&#x3D;&quot;form-group col-sm&quot;&gt;
+          &lt;label&gt;fecha&lt;/label&gt;
+          &lt;input class&#x3D;&quot;form-control&quot; formControlName&#x3D;&quot;fecha&quot; type&#x3D;&quot;date&quot; required/&gt;
+        &lt;/div&gt; --&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;grid&quot;&gt;
+        &lt;div class&#x3D;&quot;form-group gov-co-form-group&quot;&gt;
+          &lt;label&gt;Hora inicial&lt;/label&gt;
+          &lt;input class&#x3D;&quot;form-control&quot; formControlName&#x3D;&quot;hora_inicio&quot; type&#x3D;&quot;time&quot; required/&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;form-group gov-co-form-group&quot;&gt;
+          &lt;label&gt;Hora final&lt;/label&gt;
+          &lt;input class&#x3D;&quot;form-control&quot; formControlName&#x3D;&quot;hora_fin&quot; type&#x3D;&quot;time&quot; required/&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;form-group gov-co-form-group&quot;&gt;
+          &lt;label&gt;Estado&lt;/label&gt;
+          &lt;select class&#x3D;&quot;selectpicker form-control&quot; formControlName&#x3D;&quot;enabled&quot; required&gt;
+            &lt;option value&#x3D;&quot;1&quot; selected&gt;ACTIVA&lt;/option&gt;
+            &lt;option value&#x3D;&quot;0&quot;&gt;INACTIVA&lt;/option&gt;
+          &lt;/select&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div&gt;
+        &lt;button class&#x3D;&quot;btn btn-round btn-high&quot; (click)&#x3D;&quot;guardar()&quot;&gt;
+          Guardar
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/form&gt;
+  &lt;/mat-card-content&gt;
+&lt;/mat-card&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./formulario-jornadas.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">
+
+.mat-card-content {
+  padding: 5px !important;
+}
+
+.mat-card-title {
+  font-size: xx-large;
+}
+
+
+.custom-form input {
+  display: block;
+  width: 80%;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: none;
+  box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.8), inset 5px 5px 10px
+      rgba(0, 0, 0, 0.1);
+  border: 0 none;
+  background: #ebf5fc;
+}
+
+.custom-form select {
+  display: block;
+  width: 80%;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: none;
+  box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.8), inset 5px 5px 10px
+      rgba(0, 0, 0, 0.1);
+  border: 0 none;
+  background: #ebf5fc;
+}
+.custom-form button {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  border: none;
+  font-size: 0.875rem;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #2d3b89;
+  width: 50%;
+  display: block;
+  padding: 0.875rem 1rem;
+  border-radius: 1.5rem;
+  margin-left: 28%;
+  // box-shadow: 3px 3px 1px #b1b1b1, -3px -3px 1px #ffffff;
+  cursor: pointer;
+
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin-bottom: 2%;
+}
+
+.divisor{
+  height: 5px;
+  background-color: #002858;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+button{
+  border-radius: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 1.5em;
+}
+
+.form-control{
+  width: 90%;
+  display: block;
+  justify-content: space-between;
+}
+
+.mat-card-header .mat-card-title{
+  margin-bottom: 1em;
+  font-size: 30px;
+  margin: 0 0 0 1;
+  padding-left: 1px;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><mat-card class="example-card">  <mat-card-header>    <mat-card-title>Formulario de Jornadas</mat-card-title>  </mat-card-header>  <mat-card-content>    <form class="form-group"[formGroup]="JornadaForm">      <div class="grid">        <div class="form-group gov-co-form-group gov-co-valido">          <label for="">Nombre de la Jornada</label>          <input type="text" class="form-control gov-co-form-control" formControlName="nombre" required/>        </div>        <!-- <div class="form-group col-sm">          <label>Nombre de la Jornada</label>          <input class="form-control" formControlName="nombre" required/>        </div> -->        <div class="form-group gov-co-form-group gov-co-valido">          <label for="">Codigo</label>          <input type="text" class="form-control gov-co-form-control" formControlName="codigo" required/>        </div>        <!-- <div class="form-group col-sm">          <label>Codigo</label>          <input class="form-control" formControlName="codigo" required/>        </div> -->        <div class="form-group gov-co-form-group">          <div class="gov-co-dropdown">            <label for="selector-simple">Tipo de Jornada</label>            <select id="selector-simple" class="selectpicker form-control" title="selected" formControlName="tipo" required>              <option selected>PRESENCIAL</option>              <option>VIRTUAL</option>            </select>          </div>        </div>        <!-- <div class="form-group col-sm">          <label>Tipo de Jornada</label>          <select name="select" formControlName="tipo" required>            <option selected>PRESENCIAL</option>            <option>VIRTUAL</option>          </select>        </div> -->      </div>      <div class="grid">        <div class="form-group gov-co-form-group gov-co-valido">          <label for="">Tema</label>          <input type="text" class="form-control gov-co-form-control" formControlName="tema" required/>        </div>        <!-- <div class="form-group col-sm">          <label>Tema</label>          <input class="form-control" formControlName="tema" required/>        </div> -->        <div class="form-group gov-co-form-group gov-co-valido">          <label for="">Subtema</label>          <input type="text" class="form-control gov-co-form-control" formControlName="subtema" required/>        </div>        <!-- <div class="form-group col-sm">          <label>Subtema</label>          <input class="form-control" formControlName="subtema" required/>        </div> -->        <div class="form-group gov-co-form-group gov-co-valido">          <label for="">Lugar</label>          <input type="text" class="form-control gov-co-form-control" formControlName="lugar" required/>        </div>        <!-- <div class="form-group col-sm">          <label>Lugar</label>          <input class="form-control" formControlName="lugar" required/>        </div> -->      </div>      <div class="grid">        <div class="form-group gov-co-form-group">          <div class="gov-co-dropdown">            <label for="">Docente principal</label>            <select id="" class="selectpicker form-control" title="Docente" formControlName="id_docente_principal" >              <option *ngFor="let docente of listDocentes" [value]="docente.id" required >                {{ docente.nombre + " - " + docente.identificacion}}              </option>            </select>          </div>        </div>        <!-- <div class="form-group col-sm">          <label>Docente principal</label>          <select name="select"  formControlName="id_docente_principal">            <option value="" selected>Seleccione el docente</option>            <option *ngFor="let docente of listDocentes" [value]="docente.id" required>              {{ docente.nombre + " - " + docente.identificacion}}            </option>          </select>        </div> -->        <div class="form-group gov-co-form-group">          <div class="gov-co-dropdown">            <label for="">Docente suplente</label>            <select id="" class="selectpicker form-control" title="Docente" formControlName="id_docente_suplente" >              <option *ngFor="let docente of listDocentes" [value]="docente.id" required>                {{ docente.nombre + " - " + docente.identificacion}}              </option>            </select>          </div>        </div>        <!-- <div class="form-group col-sm">          <label>Docente suplente</label>          <select name="select"  formControlName="id_docente_suplente">            <option value="" selected>Seleccione el docente</option>            <option *ngFor="let docente of listDocentes" [value]="docente.id" required>              {{ docente.nombre + " - " + docente.identificacion}}            </option>          </select>        </div> -->        <div class="form-group gov-co-form-group">          <label for="">fecha</label>          <input class="form-control" formControlName="fecha"  required type="date" />       </div>        <!-- <div class="form-group col-sm">          <label>fecha</label>          <input class="form-control" formControlName="fecha" type="date" required/>        </div> -->      </div>      <div class="grid">        <div class="form-group gov-co-form-group">          <label>Hora inicial</label>          <input class="form-control" formControlName="hora_inicio" type="time" required/>        </div>        <div class="form-group gov-co-form-group">          <label>Hora final</label>          <input class="form-control" formControlName="hora_fin" type="time" required/>        </div>        <div class="form-group gov-co-form-group">          <label>Estado</label>          <select class="selectpicker form-control" formControlName="enabled" required>            <option value="1" selected>ACTIVA</option>            <option value="0">INACTIVA</option>          </select>        </div>      </div>      <div>        <button class="btn btn-round btn-high" (click)="guardar()">          Guardar        </button>      </div>    </form>  </mat-card-content></mat-card></div>'
+    var COMPONENTS = [{'name': 'AboutComponent', 'selector': ''},{'name': 'ActionsDialogComponent', 'selector': 'sic-actions-dialog'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BadgeComponent', 'selector': ''},{'name': 'BlogCardsComponent', 'selector': 'app-blog-cards'},{'name': 'ButtonsComponent', 'selector': ''},{'name': 'CardsComponent', 'selector': ''},{'name': 'ConsultaEmpresaComponent', 'selector': 'app-consulta-empresa'},{'name': 'CronogramaSolicitudComponent', 'selector': 'app-cronograma-solicitud'},{'name': 'DashboardComponent', 'selector': ''},{'name': 'DocentesComponent', 'selector': 'app-docentes'},{'name': 'EmpresasComponent', 'selector': 'app-empresas'},{'name': 'FeedsComponent', 'selector': 'app-feeds'},{'name': 'FormularioDocenteComponent', 'selector': 'app-formulario-docente'},{'name': 'FormularioEmpresaComponent', 'selector': 'app-formulario-empresa'},{'name': 'FormularioInscripcionComponent', 'selector': 'app-formulario-inscripcion'},{'name': 'FormularioInscritosComponent', 'selector': 'app-formulario-inscritos'},{'name': 'FormularioJornadasComponent', 'selector': 'app-formulario-jornadas'},{'name': 'FullComponent', 'selector': 'app-full-layout'},{'name': 'HeaderComponent', 'selector': 'header-layout'},{'name': 'JornadasComponent', 'selector': 'app-jornadas'},{'name': 'JornadasComponent', 'selector': 'app-jornadas'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'NavigationComponent', 'selector': 'app-navigation'},{'name': 'NgbdAlertBasicComponent', 'selector': 'app-ngbd-alert'},{'name': 'NgbdDropdownBasicComponent', 'selector': 'app-dropdown-basic'},{'name': 'NgbdnavBasicComponent', 'selector': 'app-ngbd-nav'},{'name': 'NgbdpaginationBasicComponent', 'selector': 'app-ngbd-pagination'},{'name': 'PlaneadorComponent', 'selector': 'app-planeador'},{'name': 'PoliticaPrivacidadComponent', 'selector': 'app-politica-privacidad'},{'name': 'SalesRatioComponent', 'selector': 'app-sales-ratio'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SolicitudesEmpresasComponent', 'selector': 'app-solicitudes-empresas'},{'name': 'SolicitudesPersonasComponent', 'selector': 'app-solicitudes-personas'},{'name': 'SpinnerComponent', 'selector': 'app-spinner'},{'name': 'SpinnerComponent', 'selector': 'general-spinner'},{'name': 'TableComponent', 'selector': 'app-table'},{'name': 'TerminosYCondicionesComponent', 'selector': 'app-terminos-y-condiciones'},{'name': 'TopCardsComponent', 'selector': 'app-top-cards'},{'name': 'TopSellingComponent', 'selector': 'app-top-selling'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'FormularioJornadasComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'FormularioJornadasComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,55 @@
+table.mat-table {
+  background-color: transparent;
+  thead {
+    border-top-right-radius: 2rem;
+    th {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.3rem;
+
+      @include respond(lg) {
+        font-size: 1.5rem;
+      }
+      &:not(:first-child, :last-child) {
+        padding: 0.5rem;
+      }
+      &:first-of-type {
+        padding: 0.5rem 0.5rem 0.5rem 2.4rem;
+      }
+      &:last-of-type {
+        padding: 0.5rem 2.4rem 0.5rem 0.5rem;
+      }
+    }
+  }
+  tbody {
+    td {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.3rem;
+
+      @include respond(lg) {
+        font-size: 1.5rem;
+      }
+      &:not(:first-child, :last-child) {
+        padding: 0.5rem;
+      }
+      &:first-of-type {
+        padding: 0.5rem 0.5rem 0.5rem 2.4rem;
+      }
+      &:last-of-type {
+        padding: 0.5rem 2.4rem 0.5rem 0.5rem;
+      }
+    }
+  }
+  tr.mat-header-row th {
+    background-color: #004466;
+    color: $color-grey;
+    &:first-child {
+      border-top-left-radius: 2rem;
+    }
+    &:last-child {
+      border-top-right-radius: 2rem;
+    }
+  }
+  .mat-icon {
+    fill: #004466;
+  }
+}

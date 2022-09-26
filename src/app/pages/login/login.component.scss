@@ -1,0 +1,116 @@
+
+.mat-card-header{
+    background-color:#E6EFFD !important;
+    // padding:20px !important;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    font-family: 'ralewaybold' !important;
+  }
+
+   .mat-card{
+    padding:0 !important;
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5%;
+  
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+  }
+
+  .mat-card-content{
+    padding:5px !important;
+  }
+
+  .mat-card-title {
+      font-size: xx-large;
+  }
+
+  // .button-form {
+  //   text-transform: uppercase;
+  //   letter-spacing: 0.15em;
+  //   border: none;
+  //   font-size: 0.875rem;
+  //   color: #ffffff;
+  //   font-weight: bold;
+  //   background-color: #2d3b89;
+  //   width: 20%;
+  //   // display: block;
+  //   padding: 0.875rem 1rem;
+  //   border-radius: 1.5rem;
+  //   margin-bottom: 3%;
+  //   box-shadow: 3px 3px 1px #b1b1b1, -3px -3px 1px #ffffff;
+  //   font-family: 'ralewaybold' !important;
+  //   cursor: pointer;
+  // }
+
+  input:focus ~ .floating-label,
+  input:not(:focus):valid ~ .floating-label{
+    top: 8px;
+    bottom: 10px;
+    left: 20px;
+    font-size: 11px;
+    opacity: 1;
+  }
+
+  .inputText {
+    margin: 3%;
+    min-width: 300px;
+  }
+
+
+  .form-row {
+    flex: 1;
+    flex-direction: row;
+    text-align: center;
+  }
+
+  .grid {
+    display: flex;
+  }
+
+  .align-input{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+  }
+
+  .div-row{
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-group{
+    width: 80%;
+    margin: 1em 5em 1em 5em;
+    padding-left: 16px;
+    padding-right: 16px;
+    justify-content: center;
+  }
+
+  .form-group input{
+    height: 40px;
+    padding: 0 16px 0 16px;
+  }
+
+  .p-2{
+    margin: 1em 1em;
+  }
+
+  label{
+    margin-left: 0.5em;
+    padding-left: 10px;
+  }
+
+  .mat-card-content .end{
+    font-size: 24px;
+    margin-top: 1em;
+
+  }

@@ -1,0 +1,34 @@
+.max-width {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.light-logo {
+  width: 100%;
+  max-width: 300px;
+}
+
+.img-header {
+  justify-content: end;
+}
+
+.img-logo {
+  width: 25%;
+  margin-top: 5px;
+  min-width: 300px;
+}
+
+.footer-logo {
+  width: 12%;
+  min-width: 160px;
+}
+
+.content {
+  min-height: calc(100vh - 130px);
+}
+
+.img-content {
+  margin: 1%;
+  width: 40%;
+  min-width: 380px;
+}
+

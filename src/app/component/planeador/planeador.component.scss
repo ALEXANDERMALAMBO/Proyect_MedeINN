@@ -1,0 +1,46 @@
+.calenda {
+    width: 90%;
+    margin-right: 2em;
+    margin-left: 2em;
+
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 2%;
+}
+
+select {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+.input-govco {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #ced4da !important;
+    
+}
+
+h4 {
+    font-size: 20px;
+    color: #004884;
+}
+
+p {
+    background-color: #E6EFFD;
+    padding: 1em;
+    // border-top-right-radius: 20px;
+    // border-top-left-radius: 20px;
+}
+
+p.infecha{
+    margin-top: 1em;
+
+}
+
+
+

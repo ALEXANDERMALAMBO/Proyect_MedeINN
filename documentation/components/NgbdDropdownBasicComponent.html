@@ -1,0 +1,840 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>nice-admin-angular documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">nice-admin-angular documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  NgbdDropdownBasicComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/component/dropdown-collapse/dropdown-collapse.component.ts</code>
+</p>
+
+
+
+
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-dropdown-basic</code></td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./dropdown-collapse.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#collapsed" >collapsed</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#isCollapsed" >isCollapsed</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+
+
+
+
+
+
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="collapsed"></a>
+                    <span class="name">
+                        <span ><b>collapsed</b></span>
+                        <a href="#collapsed"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/component/dropdown-collapse/dropdown-collapse.component.ts:11</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isCollapsed"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>isCollapsed</b></span>
+                        <a href="#isCollapsed"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/component/dropdown-collapse/dropdown-collapse.component.ts:9</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component } from &#x27;@angular/core&#x27;;
+
+@Component({
+  selector: &#x27;app-dropdown-basic&#x27;,
+  templateUrl: &#x27;./dropdown-collapse.component.html&#x27;
+})
+export class NgbdDropdownBasicComponent {
+  // This is for the collapse example
+  public isCollapsed &#x3D; false;
+
+  collapsed &#x3D; true;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;row&quot;&gt;
+  &lt;!-- &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;--&gt;
+  &lt;!-- &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;Dropdown &#x3D;&#x3D;&#x3D;&#x3D;&#x3D; --&gt;
+  &lt;!-- &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;--&gt;
+  &lt;div class&#x3D;&quot;col-12&quot;&gt;
+    &lt;div class&#x3D;&quot;card&quot;&gt;
+      &lt;div class&#x3D;&quot;p-3&quot;&gt;
+        &lt;h4 class&#x3D;&quot;card-title mb-0&quot;&gt;Dropdown&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;card-body border-top&quot;&gt;
+        &lt;div class&#x3D;&quot;button-group&quot;&gt;
+          &lt;div class&#x3D;&quot;d-inline-block&quot; ngbDropdown&gt;
+            &lt;button
+              class&#x3D;&quot;
+                btn btn-primary
+                dropdown-toggle-icon-none
+                d-flex
+                align-items-center
+              &quot;
+              id&#x3D;&quot;dropdown1&quot;
+              ngbDropdownToggle
+            &gt;
+              Primary
+              &lt;i
+                class&#x3D;&quot;feather-sm d-flex ms-2&quot;
+                name&#x3D;&quot;chevron-down&quot;
+              &gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;div ngbDropdownMenu aria-labelledby&#x3D;&quot;dropdown1&quot;&gt;
+              &lt;button class&#x3D;&quot;dropdown-item&quot;&gt;Option 1&lt;/button&gt;
+              &lt;button class&#x3D;&quot;dropdown-item&quot;&gt;Option 2&lt;/button&gt;
+              &lt;button class&#x3D;&quot;dropdown-item&quot;&gt;Option 3&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;d-inline-block&quot; ngbDropdown&gt;
+            &lt;button
+              class&#x3D;&quot;
+                btn btn-danger
+                dropdown-toggle-icon-none
+                d-flex
+                align-items-center
+              &quot;
+              id&#x3D;&quot;dropdown2&quot;
+              ngbDropdownToggle
+            &gt;
+              Danger
+              &lt;i
+                class&#x3D;&quot;feather-sm d-flex ms-2&quot;
+                name&#x3D;&quot;chevron-down&quot;
+              &gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;div ngbDropdownMenu aria-labelledby&#x3D;&quot;dropdown2&quot;&gt;
+              &lt;button class&#x3D;&quot;dropdown-item&quot;&gt;Option 1&lt;/button&gt;
+              &lt;button class&#x3D;&quot;dropdown-item&quot;&gt;Option 2&lt;/button&gt;
+              &lt;button class&#x3D;&quot;dropdown-item&quot;&gt;Option 3&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class&#x3D;&quot;d-inline-block&quot; ngbDropdown&gt;
+            &lt;button
+              class&#x3D;&quot;
+                btn btn-info
+                dropdown-toggle-icon-none
+                d-flex
+                align-items-center
+              &quot;
+              id&#x3D;&quot;dropdown3&quot;
+              ngbDropdownToggle
+            &gt;
+              Info
+              &lt;i
+                class&#x3D;&quot;feather-sm d-flex ms-2&quot;
+                name&#x3D;&quot;chevron-down&quot;
+              &gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;div ngbDropdownMenu aria-labelledby&#x3D;&quot;dropdown3&quot;&gt;
+              &lt;button class&#x3D;&quot;dropdown-item&quot;&gt;Option 1&lt;/button&gt;
+              &lt;button class&#x3D;&quot;dropdown-item&quot;&gt;Option 2&lt;/button&gt;
+              &lt;button class&#x3D;&quot;dropdown-item&quot;&gt;Option 3&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;d-inline-block&quot; ngbDropdown&gt;
+            &lt;button
+              class&#x3D;&quot;
+                btn btn-warning
+                dropdown-toggle-icon-none
+                d-flex
+                align-items-center
+              &quot;
+              id&#x3D;&quot;dropdown4&quot;
+              ngbDropdownToggle
+            &gt;
+              Warning
+              &lt;i
+                class&#x3D;&quot;feather-sm d-flex ms-2&quot;
+                name&#x3D;&quot;chevron-down&quot;
+              &gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;div ngbDropdownMenu aria-labelledby&#x3D;&quot;dropdown4&quot;&gt;
+              &lt;button class&#x3D;&quot;dropdown-item&quot;&gt;Option 1&lt;/button&gt;
+              &lt;button class&#x3D;&quot;dropdown-item&quot;&gt;Option 2&lt;/button&gt;
+              &lt;button class&#x3D;&quot;dropdown-item&quot;&gt;Option 3&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;d-inline-block&quot; ngbDropdown&gt;
+            &lt;button
+              class&#x3D;&quot;
+                btn btn-success
+                dropdown-toggle-icon-none
+                d-flex
+                align-items-center
+              &quot;
+              id&#x3D;&quot;dropdown5&quot;
+              ngbDropdownToggle
+            &gt;
+              Success
+              &lt;i
+                class&#x3D;&quot;feather-sm d-flex ms-2&quot;
+                name&#x3D;&quot;chevron-down&quot;
+              &gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;div ngbDropdownMenu aria-labelledby&#x3D;&quot;dropdown5&quot;&gt;
+              &lt;button class&#x3D;&quot;dropdown-item&quot;&gt;Option 1&lt;/button&gt;
+              &lt;button class&#x3D;&quot;dropdown-item&quot;&gt;Option 2&lt;/button&gt;
+              &lt;button class&#x3D;&quot;dropdown-item&quot;&gt;Option 3&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;d-inline-block&quot; ngbDropdown&gt;
+            &lt;button
+              class&#x3D;&quot;
+                btn btn-secondary
+                dropdown-toggle-icon-none
+                d-flex
+                align-items-center
+              &quot;
+              id&#x3D;&quot;dropdown6&quot;
+              ngbDropdownToggle
+            &gt;
+              Secondary
+              &lt;i
+                class&#x3D;&quot;feather-sm d-flex ms-2&quot;
+                name&#x3D;&quot;chevron-down&quot;
+              &gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;div ngbDropdownMenu aria-labelledby&#x3D;&quot;dropdown6&quot;&gt;
+              &lt;button class&#x3D;&quot;dropdown-item&quot;&gt;Option 1&lt;/button&gt;
+              &lt;button class&#x3D;&quot;dropdown-item&quot;&gt;Option 2&lt;/button&gt;
+              &lt;button class&#x3D;&quot;dropdown-item&quot;&gt;Option 3&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;!-- &lt;div class&#x3D;&quot;col text-end&quot;&gt;
+            &lt;div ngbDropdown placement&#x3D;&quot;top-end&quot;&gt;
+              &lt;button
+                class&#x3D;&quot;btn btn-outline-primary&quot;
+                id&#x3D;&quot;dropdownBasic2&quot;
+                ngbDropdownToggle
+              &gt;
+                Toggle dropup
+              &lt;/button&gt;
+              &lt;div ngbDropdownMenu aria-labelledby&#x3D;&quot;dropdownBasic2&quot;&gt;
+                &lt;button class&#x3D;&quot;dropdown-item&quot;&gt;Option 1&lt;/button&gt;
+                &lt;button class&#x3D;&quot;dropdown-item&quot;&gt;Option 2&lt;/button&gt;
+                &lt;button class&#x3D;&quot;dropdown-item&quot;&gt;Option 3&lt;/button&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt; --&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;--&gt;
+  &lt;!-- &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;Dropup &#x3D;&#x3D;&#x3D;&#x3D;&#x3D; --&gt;
+  &lt;!-- &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;--&gt;
+  &lt;div class&#x3D;&quot;col-12&quot;&gt;
+    &lt;div class&#x3D;&quot;card&quot;&gt;
+      &lt;div class&#x3D;&quot;p-3&quot;&gt;
+        &lt;h4 class&#x3D;&quot;card-title mb-0&quot;&gt;Dropup&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;card-body border-top&quot;&gt;
+        &lt;div class&#x3D;&quot;button-group&quot;&gt;
+          &lt;div class&#x3D;&quot;d-inline-block&quot; ngbDropdown placement&#x3D;&quot;top-end&quot;&gt;
+            &lt;button
+              class&#x3D;&quot;
+                btn btn-primary
+                dropdown-toggle-icon-none
+                d-flex
+                align-items-center
+              &quot;
+              id&#x3D;&quot;dropdown1&quot;
+              ngbDropdownToggle
+            &gt;
+              Primary
+              &lt;i
+                class&#x3D;&quot;feather-sm d-flex ms-2&quot;
+                name&#x3D;&quot;chevron-up&quot;
+              &gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;div ngbDropdownMenu aria-labelledby&#x3D;&quot;dropdown1&quot;&gt;
+              &lt;button class&#x3D;&quot;dropdown-item&quot;&gt;Option 1&lt;/button&gt;
+              &lt;button class&#x3D;&quot;dropdown-item&quot;&gt;Option 2&lt;/button&gt;
+              &lt;button class&#x3D;&quot;dropdown-item&quot;&gt;Option 3&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;d-inline-block&quot; ngbDropdown placement&#x3D;&quot;top-end&quot;&gt;
+            &lt;button
+              class&#x3D;&quot;
+                btn btn-danger
+                dropdown-toggle-icon-none
+                d-flex
+                align-items-center
+              &quot;
+              id&#x3D;&quot;dropdown2&quot;
+              ngbDropdownToggle
+            &gt;
+              Danger
+              &lt;i
+                class&#x3D;&quot;feather-sm d-flex ms-2&quot;
+                name&#x3D;&quot;chevron-up&quot;
+              &gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;div ngbDropdownMenu aria-labelledby&#x3D;&quot;dropdown2&quot;&gt;
+              &lt;button class&#x3D;&quot;dropdown-item&quot;&gt;Option 1&lt;/button&gt;
+              &lt;button class&#x3D;&quot;dropdown-item&quot;&gt;Option 2&lt;/button&gt;
+              &lt;button class&#x3D;&quot;dropdown-item&quot;&gt;Option 3&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class&#x3D;&quot;d-inline-block&quot; ngbDropdown placement&#x3D;&quot;top-end&quot;&gt;
+            &lt;button
+              class&#x3D;&quot;
+                btn btn-info
+                dropdown-toggle-icon-none
+                d-flex
+                align-items-center
+              &quot;
+              id&#x3D;&quot;dropdown3&quot;
+              ngbDropdownToggle
+            &gt;
+              Info
+              &lt;i
+                class&#x3D;&quot;feather-sm d-flex ms-2&quot;
+                name&#x3D;&quot;chevron-up&quot;
+              &gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;div ngbDropdownMenu aria-labelledby&#x3D;&quot;dropdown3&quot;&gt;
+              &lt;button class&#x3D;&quot;dropdown-item&quot;&gt;Option 1&lt;/button&gt;
+              &lt;button class&#x3D;&quot;dropdown-item&quot;&gt;Option 2&lt;/button&gt;
+              &lt;button class&#x3D;&quot;dropdown-item&quot;&gt;Option 3&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;d-inline-block&quot; ngbDropdown placement&#x3D;&quot;top-end&quot;&gt;
+            &lt;button
+              class&#x3D;&quot;
+                btn btn-warning
+                dropdown-toggle-icon-none
+                d-flex
+                align-items-center
+              &quot;
+              id&#x3D;&quot;dropdown4&quot;
+              ngbDropdownToggle
+            &gt;
+              Warning
+              &lt;i
+                class&#x3D;&quot;feather-sm d-flex ms-2&quot;
+                name&#x3D;&quot;chevron-up&quot;
+              &gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;div ngbDropdownMenu aria-labelledby&#x3D;&quot;dropdown4&quot;&gt;
+              &lt;button class&#x3D;&quot;dropdown-item&quot;&gt;Option 1&lt;/button&gt;
+              &lt;button class&#x3D;&quot;dropdown-item&quot;&gt;Option 2&lt;/button&gt;
+              &lt;button class&#x3D;&quot;dropdown-item&quot;&gt;Option 3&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;d-inline-block&quot; ngbDropdown placement&#x3D;&quot;top-end&quot;&gt;
+            &lt;button
+              class&#x3D;&quot;
+                btn btn-success
+                dropdown-toggle-icon-none
+                d-flex
+                align-items-center
+              &quot;
+              id&#x3D;&quot;dropdown5&quot;
+              ngbDropdownToggle
+            &gt;
+              Success
+              &lt;i
+                class&#x3D;&quot;feather-sm d-flex ms-2&quot;
+                name&#x3D;&quot;chevron-up&quot;
+              &gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;div ngbDropdownMenu aria-labelledby&#x3D;&quot;dropdown5&quot;&gt;
+              &lt;button class&#x3D;&quot;dropdown-item&quot;&gt;Option 1&lt;/button&gt;
+              &lt;button class&#x3D;&quot;dropdown-item&quot;&gt;Option 2&lt;/button&gt;
+              &lt;button class&#x3D;&quot;dropdown-item&quot;&gt;Option 3&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;d-inline-block&quot; ngbDropdown placement&#x3D;&quot;top-end&quot;&gt;
+            &lt;button
+              class&#x3D;&quot;
+                btn btn-secondary
+                dropdown-toggle-icon-none
+                d-flex
+                align-items-center
+              &quot;
+              id&#x3D;&quot;dropdown6&quot;
+              ngbDropdownToggle
+            &gt;
+              Secondary
+              &lt;i
+                class&#x3D;&quot;feather-sm d-flex ms-2&quot;
+                name&#x3D;&quot;chevron-up&quot;
+              &gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;div ngbDropdownMenu aria-labelledby&#x3D;&quot;dropdown6&quot;&gt;
+              &lt;button class&#x3D;&quot;dropdown-item&quot;&gt;Option 1&lt;/button&gt;
+              &lt;button class&#x3D;&quot;dropdown-item&quot;&gt;Option 2&lt;/button&gt;
+              &lt;button class&#x3D;&quot;dropdown-item&quot;&gt;Option 3&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;col-12&quot;&gt;
+    &lt;!-- &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;--&gt;
+    &lt;!-- &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D; Split  Dropdown &#x3D;&#x3D;&#x3D;&#x3D;&#x3D; --&gt;
+    &lt;!-- &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;--&gt;
+    &lt;div class&#x3D;&quot;card&quot;&gt;
+      &lt;div class&#x3D;&quot;p-3&quot;&gt;
+        &lt;h4 class&#x3D;&quot;card-title mb-0&quot;&gt;Split Dropdowns&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;card-body border-top&quot;&gt;
+        &lt;div class&#x3D;&quot;btn-group me-2 mb-2 mb-md-0&quot;&gt;
+          &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;
+          &lt;div
+            class&#x3D;&quot;btn-group&quot;
+            ngbDropdown
+            role&#x3D;&quot;group&quot;
+            aria-label&#x3D;&quot;Button group with nested dropdown&quot;
+          &gt;
+            &lt;button
+              class&#x3D;&quot;
+                btn btn-primary
+                dropdown-toggle-split dropdown-toggle-icon-none
+              &quot;
+              ngbDropdownToggle
+            &gt;
+              &lt;i
+                class&#x3D;&quot;feather-sm d-flex&quot;
+                name&#x3D;&quot;chevron-down&quot;
+              &gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;div class&#x3D;&quot;dropdown-menu&quot; ngbDropdownMenu&gt;
+              &lt;button ngbDropdownItem&gt;One&lt;/button&gt;
+              &lt;button ngbDropdownItem&gt;Two&lt;/button&gt;
+              &lt;button ngbDropdownItem&gt;Four!&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- 2 --&gt;
+        &lt;div class&#x3D;&quot;btn-group me-2 mb-2 mb-md-0&quot;&gt;
+          &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;
+          &lt;div
+            class&#x3D;&quot;btn-group&quot;
+            ngbDropdown
+            role&#x3D;&quot;group&quot;
+            aria-label&#x3D;&quot;Button group with nested dropdown&quot;
+          &gt;
+            &lt;button
+              class&#x3D;&quot;
+                btn btn-danger
+                dropdown-toggle-split dropdown-toggle-icon-none
+              &quot;
+              ngbDropdownToggle
+            &gt;
+              &lt;i
+                class&#x3D;&quot;feather-sm d-flex&quot;
+                name&#x3D;&quot;chevron-down&quot;
+              &gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;div class&#x3D;&quot;dropdown-menu&quot; ngbDropdownMenu&gt;
+              &lt;button ngbDropdownItem&gt;One&lt;/button&gt;
+              &lt;button ngbDropdownItem&gt;Two&lt;/button&gt;
+              &lt;button ngbDropdownItem&gt;Four!&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- 3 --&gt;
+        &lt;div class&#x3D;&quot;btn-group me-2 mb-2 mb-md-0&quot;&gt;
+          &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-info&quot;&gt;Info&lt;/button&gt;
+          &lt;div
+            class&#x3D;&quot;btn-group&quot;
+            ngbDropdown
+            role&#x3D;&quot;group&quot;
+            aria-label&#x3D;&quot;Button group with nested dropdown&quot;
+          &gt;
+            &lt;button
+              class&#x3D;&quot;
+                btn btn-info
+                dropdown-toggle-split dropdown-toggle-icon-none
+              &quot;
+              ngbDropdownToggle
+            &gt;
+              &lt;i
+                class&#x3D;&quot;feather-sm d-flex&quot;
+                name&#x3D;&quot;chevron-down&quot;
+              &gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;div class&#x3D;&quot;dropdown-menu&quot; ngbDropdownMenu&gt;
+              &lt;button ngbDropdownItem&gt;One&lt;/button&gt;
+              &lt;button ngbDropdownItem&gt;Two&lt;/button&gt;
+              &lt;button ngbDropdownItem&gt;Four!&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- 4 --&gt;
+        &lt;div class&#x3D;&quot;btn-group me-2 mb-2 mb-md-0&quot;&gt;
+          &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-warning&quot;&gt;Warning&lt;/button&gt;
+          &lt;div
+            class&#x3D;&quot;btn-group&quot;
+            ngbDropdown
+            role&#x3D;&quot;group&quot;
+            aria-label&#x3D;&quot;Button group with nested dropdown&quot;
+          &gt;
+            &lt;button
+              class&#x3D;&quot;
+                btn btn-warning
+                dropdown-toggle-split dropdown-toggle-icon-none
+              &quot;
+              ngbDropdownToggle
+            &gt;
+              &lt;i
+                class&#x3D;&quot;feather-sm d-flex&quot;
+                name&#x3D;&quot;chevron-down&quot;
+              &gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;div class&#x3D;&quot;dropdown-menu&quot; ngbDropdownMenu&gt;
+              &lt;button ngbDropdownItem&gt;One&lt;/button&gt;
+              &lt;button ngbDropdownItem&gt;Two&lt;/button&gt;
+              &lt;button ngbDropdownItem&gt;Four!&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- 5 --&gt;
+        &lt;div class&#x3D;&quot;btn-group me-2 mb-2 mb-md-0&quot;&gt;
+          &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-success&quot;&gt;Success&lt;/button&gt;
+          &lt;div
+            class&#x3D;&quot;btn-group&quot;
+            ngbDropdown
+            role&#x3D;&quot;group&quot;
+            aria-label&#x3D;&quot;Button group with nested dropdown&quot;
+          &gt;
+            &lt;button
+              class&#x3D;&quot;
+                btn btn-success
+                dropdown-toggle-split dropdown-toggle-icon-none
+              &quot;
+              ngbDropdownToggle
+            &gt;
+              &lt;i
+                class&#x3D;&quot;feather-sm d-flex&quot;
+                name&#x3D;&quot;chevron-down&quot;
+              &gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;div class&#x3D;&quot;dropdown-menu&quot; ngbDropdownMenu&gt;
+              &lt;button ngbDropdownItem&gt;One&lt;/button&gt;
+              &lt;button ngbDropdownItem&gt;Two&lt;/button&gt;
+              &lt;button ngbDropdownItem&gt;Four!&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- 6 --&gt;
+        &lt;div class&#x3D;&quot;btn-group me-2&quot;&gt;
+          &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-secondary&quot;&gt;Secondary&lt;/button&gt;
+          &lt;div
+            class&#x3D;&quot;btn-group&quot;
+            ngbDropdown
+            role&#x3D;&quot;group&quot;
+            aria-label&#x3D;&quot;Button group with nested dropdown&quot;
+          &gt;
+            &lt;button
+              class&#x3D;&quot;
+                btn btn-secondary
+                dropdown-toggle-split dropdown-toggle-icon-none
+              &quot;
+              ngbDropdownToggle
+            &gt;
+              &lt;i
+                class&#x3D;&quot;feather-sm d-flex&quot;
+                name&#x3D;&quot;chevron-down&quot;
+              &gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;div class&#x3D;&quot;dropdown-menu&quot; ngbDropdownMenu&gt;
+              &lt;button ngbDropdownItem&gt;One&lt;/button&gt;
+              &lt;button ngbDropdownItem&gt;Two&lt;/button&gt;
+              &lt;button ngbDropdownItem&gt;Four!&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="row">  <!-- ==================================-->  <!-- =======Dropdown ===== -->  <!-- ==================================-->  <div class="col-12">    <div class="card">      <div class="p-3">        <h4 class="card-title mb-0">Dropdown</h4>      </div>      <div class="card-body border-top">        <div class="button-group">          <div class="d-inline-block" ngbDropdown>            <button              class="                btn btn-primary                dropdown-toggle-icon-none                d-flex                align-items-center              "              id="dropdown1"              ngbDropdownToggle            >              Primary              <i                class="feather-sm d-flex ms-2"                name="chevron-down"              ></i>            </button>            <div ngbDropdownMenu aria-labelledby="dropdown1">              <button class="dropdown-item">Option 1</button>              <button class="dropdown-item">Option 2</button>              <button class="dropdown-item">Option 3</button>            </div>          </div>          <div class="d-inline-block" ngbDropdown>            <button              class="                btn btn-danger                dropdown-toggle-icon-none                d-flex                align-items-center              "              id="dropdown2"              ngbDropdownToggle            >              Danger              <i                class="feather-sm d-flex ms-2"                name="chevron-down"              ></i>            </button>            <div ngbDropdownMenu aria-labelledby="dropdown2">              <button class="dropdown-item">Option 1</button>              <button class="dropdown-item">Option 2</button>              <button class="dropdown-item">Option 3</button>            </div>          </div>          <div class="d-inline-block" ngbDropdown>            <button              class="                btn btn-info                dropdown-toggle-icon-none                d-flex                align-items-center              "              id="dropdown3"              ngbDropdownToggle            >              Info              <i                class="feather-sm d-flex ms-2"                name="chevron-down"              ></i>            </button>            <div ngbDropdownMenu aria-labelledby="dropdown3">              <button class="dropdown-item">Option 1</button>              <button class="dropdown-item">Option 2</button>              <button class="dropdown-item">Option 3</button>            </div>          </div>          <div class="d-inline-block" ngbDropdown>            <button              class="                btn btn-warning                dropdown-toggle-icon-none                d-flex                align-items-center              "              id="dropdown4"              ngbDropdownToggle            >              Warning              <i                class="feather-sm d-flex ms-2"                name="chevron-down"              ></i>            </button>            <div ngbDropdownMenu aria-labelledby="dropdown4">              <button class="dropdown-item">Option 1</button>              <button class="dropdown-item">Option 2</button>              <button class="dropdown-item">Option 3</button>            </div>          </div>          <div class="d-inline-block" ngbDropdown>            <button              class="                btn btn-success                dropdown-toggle-icon-none                d-flex                align-items-center              "              id="dropdown5"              ngbDropdownToggle            >              Success              <i                class="feather-sm d-flex ms-2"                name="chevron-down"              ></i>            </button>            <div ngbDropdownMenu aria-labelledby="dropdown5">              <button class="dropdown-item">Option 1</button>              <button class="dropdown-item">Option 2</button>              <button class="dropdown-item">Option 3</button>            </div>          </div>          <div class="d-inline-block" ngbDropdown>            <button              class="                btn btn-secondary                dropdown-toggle-icon-none                d-flex                align-items-center              "              id="dropdown6"              ngbDropdownToggle            >              Secondary              <i                class="feather-sm d-flex ms-2"                name="chevron-down"              ></i>            </button>            <div ngbDropdownMenu aria-labelledby="dropdown6">              <button class="dropdown-item">Option 1</button>              <button class="dropdown-item">Option 2</button>              <button class="dropdown-item">Option 3</button>            </div>          </div>          <!-- <div class="col text-end">            <div ngbDropdown placement="top-end">              <button                class="btn btn-outline-primary"                id="dropdownBasic2"                ngbDropdownToggle              >                Toggle dropup              </button>              <div ngbDropdownMenu aria-labelledby="dropdownBasic2">                <button class="dropdown-item">Option 1</button>                <button class="dropdown-item">Option 2</button>                <button class="dropdown-item">Option 3</button>              </div>            </div>          </div> -->        </div>      </div>    </div>  </div>  <!-- ==================================-->  <!-- =======Dropup ===== -->  <!-- ==================================-->  <div class="col-12">    <div class="card">      <div class="p-3">        <h4 class="card-title mb-0">Dropup</h4>      </div>      <div class="card-body border-top">        <div class="button-group">          <div class="d-inline-block" ngbDropdown placement="top-end">            <button              class="                btn btn-primary                dropdown-toggle-icon-none                d-flex                align-items-center              "              id="dropdown1"              ngbDropdownToggle            >              Primary              <i                class="feather-sm d-flex ms-2"                name="chevron-up"              ></i>            </button>            <div ngbDropdownMenu aria-labelledby="dropdown1">              <button class="dropdown-item">Option 1</button>              <button class="dropdown-item">Option 2</button>              <button class="dropdown-item">Option 3</button>            </div>          </div>          <div class="d-inline-block" ngbDropdown placement="top-end">            <button              class="                btn btn-danger                dropdown-toggle-icon-none                d-flex                align-items-center              "              id="dropdown2"              ngbDropdownToggle            >              Danger              <i                class="feather-sm d-flex ms-2"                name="chevron-up"              ></i>            </button>            <div ngbDropdownMenu aria-labelledby="dropdown2">              <button class="dropdown-item">Option 1</button>              <button class="dropdown-item">Option 2</button>              <button class="dropdown-item">Option 3</button>            </div>          </div>          <div class="d-inline-block" ngbDropdown placement="top-end">            <button              class="                btn btn-info                dropdown-toggle-icon-none                d-flex                align-items-center              "              id="dropdown3"              ngbDropdownToggle            >              Info              <i                class="feather-sm d-flex ms-2"                name="chevron-up"              ></i>            </button>            <div ngbDropdownMenu aria-labelledby="dropdown3">              <button class="dropdown-item">Option 1</button>              <button class="dropdown-item">Option 2</button>              <button class="dropdown-item">Option 3</button>            </div>          </div>          <div class="d-inline-block" ngbDropdown placement="top-end">            <button              class="                btn btn-warning                dropdown-toggle-icon-none                d-flex                align-items-center              "              id="dropdown4"              ngbDropdownToggle            >              Warning              <i                class="feather-sm d-flex ms-2"                name="chevron-up"              ></i>            </button>            <div ngbDropdownMenu aria-labelledby="dropdown4">              <button class="dropdown-item">Option 1</button>              <button class="dropdown-item">Option 2</button>              <button class="dropdown-item">Option 3</button>            </div>          </div>          <div class="d-inline-block" ngbDropdown placement="top-end">            <button              class="                btn btn-success                dropdown-toggle-icon-none                d-flex                align-items-center              "              id="dropdown5"              ngbDropdownToggle            >              Success              <i                class="feather-sm d-flex ms-2"                name="chevron-up"              ></i>            </button>            <div ngbDropdownMenu aria-labelledby="dropdown5">              <button class="dropdown-item">Option 1</button>              <button class="dropdown-item">Option 2</button>              <button class="dropdown-item">Option 3</button>            </div>          </div>          <div class="d-inline-block" ngbDropdown placement="top-end">            <button              class="                btn btn-secondary                dropdown-toggle-icon-none                d-flex                align-items-center              "              id="dropdown6"              ngbDropdownToggle            >              Secondary              <i                class="feather-sm d-flex ms-2"                name="chevron-up"              ></i>            </button>            <div ngbDropdownMenu aria-labelledby="dropdown6">              <button class="dropdown-item">Option 1</button>              <button class="dropdown-item">Option 2</button>              <button class="dropdown-item">Option 3</button>            </div>          </div>        </div>      </div>    </div>  </div>  <div class="col-12">    <!-- ==================================-->    <!-- ======= Split  Dropdown ===== -->    <!-- ==================================-->    <div class="card">      <div class="p-3">        <h4 class="card-title mb-0">Split Dropdowns</h4>      </div>      <div class="card-body border-top">        <div class="btn-group me-2 mb-2 mb-md-0">          <button type="button" class="btn btn-primary">Primary</button>          <div            class="btn-group"            ngbDropdown            role="group"            aria-label="Button group with nested dropdown"          >            <button              class="                btn btn-primary                dropdown-toggle-split dropdown-toggle-icon-none              "              ngbDropdownToggle            >              <i                class="feather-sm d-flex"                name="chevron-down"              ></i>            </button>            <div class="dropdown-menu" ngbDropdownMenu>              <button ngbDropdownItem>One</button>              <button ngbDropdownItem>Two</button>              <button ngbDropdownItem>Four!</button>            </div>          </div>        </div>        <!-- 2 -->        <div class="btn-group me-2 mb-2 mb-md-0">          <button type="button" class="btn btn-danger">Danger</button>          <div            class="btn-group"            ngbDropdown            role="group"            aria-label="Button group with nested dropdown"          >            <button              class="                btn btn-danger                dropdown-toggle-split dropdown-toggle-icon-none              "              ngbDropdownToggle            >              <i                class="feather-sm d-flex"                name="chevron-down"              ></i>            </button>            <div class="dropdown-menu" ngbDropdownMenu>              <button ngbDropdownItem>One</button>              <button ngbDropdownItem>Two</button>              <button ngbDropdownItem>Four!</button>            </div>          </div>        </div>        <!-- 3 -->        <div class="btn-group me-2 mb-2 mb-md-0">          <button type="button" class="btn btn-info">Info</button>          <div            class="btn-group"            ngbDropdown            role="group"            aria-label="Button group with nested dropdown"          >            <button              class="                btn btn-info                dropdown-toggle-split dropdown-toggle-icon-none              "              ngbDropdownToggle            >              <i                class="feather-sm d-flex"                name="chevron-down"              ></i>            </button>            <div class="dropdown-menu" ngbDropdownMenu>              <button ngbDropdownItem>One</button>              <button ngbDropdownItem>Two</button>              <button ngbDropdownItem>Four!</button>            </div>          </div>        </div>        <!-- 4 -->        <div class="btn-group me-2 mb-2 mb-md-0">          <button type="button" class="btn btn-warning">Warning</button>          <div            class="btn-group"            ngbDropdown            role="group"            aria-label="Button group with nested dropdown"          >            <button              class="                btn btn-warning                dropdown-toggle-split dropdown-toggle-icon-none              "              ngbDropdownToggle            >              <i                class="feather-sm d-flex"                name="chevron-down"              ></i>            </button>            <div class="dropdown-menu" ngbDropdownMenu>              <button ngbDropdownItem>One</button>              <button ngbDropdownItem>Two</button>              <button ngbDropdownItem>Four!</button>            </div>          </div>        </div>        <!-- 5 -->        <div class="btn-group me-2 mb-2 mb-md-0">          <button type="button" class="btn btn-success">Success</button>          <div            class="btn-group"            ngbDropdown            role="group"            aria-label="Button group with nested dropdown"          >            <button              class="                btn btn-success                dropdown-toggle-split dropdown-toggle-icon-none              "              ngbDropdownToggle            >              <i                class="feather-sm d-flex"                name="chevron-down"              ></i>            </button>            <div class="dropdown-menu" ngbDropdownMenu>              <button ngbDropdownItem>One</button>              <button ngbDropdownItem>Two</button>              <button ngbDropdownItem>Four!</button>            </div>          </div>        </div>        <!-- 6 -->        <div class="btn-group me-2">          <button type="button" class="btn btn-secondary">Secondary</button>          <div            class="btn-group"            ngbDropdown            role="group"            aria-label="Button group with nested dropdown"          >            <button              class="                btn btn-secondary                dropdown-toggle-split dropdown-toggle-icon-none              "              ngbDropdownToggle            >              <i                class="feather-sm d-flex"                name="chevron-down"              ></i>            </button>            <div class="dropdown-menu" ngbDropdownMenu>              <button ngbDropdownItem>One</button>              <button ngbDropdownItem>Two</button>              <button ngbDropdownItem>Four!</button>            </div>          </div>        </div>      </div>    </div>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AboutComponent', 'selector': ''},{'name': 'ActionsDialogComponent', 'selector': 'sic-actions-dialog'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BadgeComponent', 'selector': ''},{'name': 'BlogCardsComponent', 'selector': 'app-blog-cards'},{'name': 'ButtonsComponent', 'selector': ''},{'name': 'CardsComponent', 'selector': ''},{'name': 'ConsultaEmpresaComponent', 'selector': 'app-consulta-empresa'},{'name': 'CronogramaSolicitudComponent', 'selector': 'app-cronograma-solicitud'},{'name': 'DashboardComponent', 'selector': ''},{'name': 'DocentesComponent', 'selector': 'app-docentes'},{'name': 'EmpresasComponent', 'selector': 'app-empresas'},{'name': 'FeedsComponent', 'selector': 'app-feeds'},{'name': 'FormularioDocenteComponent', 'selector': 'app-formulario-docente'},{'name': 'FormularioEmpresaComponent', 'selector': 'app-formulario-empresa'},{'name': 'FormularioInscripcionComponent', 'selector': 'app-formulario-inscripcion'},{'name': 'FormularioInscritosComponent', 'selector': 'app-formulario-inscritos'},{'name': 'FormularioJornadasComponent', 'selector': 'app-formulario-jornadas'},{'name': 'FullComponent', 'selector': 'app-full-layout'},{'name': 'HeaderComponent', 'selector': 'header-layout'},{'name': 'JornadasComponent', 'selector': 'app-jornadas'},{'name': 'JornadasComponent', 'selector': 'app-jornadas'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'NavigationComponent', 'selector': 'app-navigation'},{'name': 'NgbdAlertBasicComponent', 'selector': 'app-ngbd-alert'},{'name': 'NgbdDropdownBasicComponent', 'selector': 'app-dropdown-basic'},{'name': 'NgbdnavBasicComponent', 'selector': 'app-ngbd-nav'},{'name': 'NgbdpaginationBasicComponent', 'selector': 'app-ngbd-pagination'},{'name': 'PlaneadorComponent', 'selector': 'app-planeador'},{'name': 'PoliticaPrivacidadComponent', 'selector': 'app-politica-privacidad'},{'name': 'SalesRatioComponent', 'selector': 'app-sales-ratio'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SolicitudesEmpresasComponent', 'selector': 'app-solicitudes-empresas'},{'name': 'SolicitudesPersonasComponent', 'selector': 'app-solicitudes-personas'},{'name': 'SpinnerComponent', 'selector': 'app-spinner'},{'name': 'SpinnerComponent', 'selector': 'general-spinner'},{'name': 'TableComponent', 'selector': 'app-table'},{'name': 'TerminosYCondicionesComponent', 'selector': 'app-terminos-y-condiciones'},{'name': 'TopCardsComponent', 'selector': 'app-top-cards'},{'name': 'TopSellingComponent', 'selector': 'app-top-selling'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'NgbdDropdownBasicComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'NgbdDropdownBasicComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

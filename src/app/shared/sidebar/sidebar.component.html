@@ -1,0 +1,47 @@
+<div>
+    <nav class="sidebar-nav" style="background-color: #3366CC;color:white" >
+        <ul id="sidebarnav" style="background-color: #3366CC;color:white"  >
+            <!-- First level menu -->
+            <li class="sidebar-item" [class.active]="showMenu === sidebarnavItem.title"
+                *ngFor="let sidebarnavItem of sidebarnavItems"
+                [routerLinkActive]="sidebarnavItem.submenu.length != 0 ? '' : 'active'" style="background-color: #3366CC;color:white" >
+                <div class="nav-small-cap" *ngIf="sidebarnavItem.extralink === true" style="background-color: #3366CC;color:white" >{{sidebarnavItem.title}}</div>
+                <a class="sidebar-link waves-effect waves-dark" style="background-color: #3366CC;color:white" 
+                    [routerLink]="sidebarnavItem.class === '' ? [sidebarnavItem.path] : null"
+                    [ngClass]="[sidebarnavItem.class]" *ngIf="!sidebarnavItem.extralink;"
+                    (click)="addExpandClass(sidebarnavItem.title)"
+                    [routerLinkActive]="sidebarnavItem.submenu.length != 0 ? '' : 'active'">
+                    <i [ngClass]="[sidebarnavItem.icon]" style="background-color: #3366CC;color:white" ></i>
+                    <span class="hide-menu" style="color:white;">{{sidebarnavItem.title}}</span>
+                </a>
+            </li>
+
+            <!-- <li class="text-center p-3 upgrade-btn">
+            <span class="btn d-block w-100 btn-primary new" (click)="logout()">
+                <i [ngClass]="['bi bi-box-arrow-right']"></i>
+                Salir
+            </span> -->
+            <!-- <a href="https://www.wrappixel.com/templates/niceadmin-angular/" class="btn d-block w-100 btn-danger">Upgrade to Pro</a> -->
+            <!-- </li> -->
+        </ul>
+    </nav>
+</div>
+<div>
+    <button href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet" 
+
+        class="btn-round btn-high" (click)="logout()">
+        <i [ngClass]="['bi bi-box-arrow-right']"></i>
+        salir</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+

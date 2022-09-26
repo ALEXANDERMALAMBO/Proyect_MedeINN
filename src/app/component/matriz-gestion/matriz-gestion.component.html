@@ -1,0 +1,82 @@
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Matriz de gestión</h4>
+                <h5 class="card-subtitle text-muted">Matriz de gestión del sistema de Agendamiento SIC</h5>
+
+                <div class="table-responsive">
+                    <table class="table align-middle text-nowrap">
+
+                        <thead>
+                            <tr>
+                                <th class="text-dark font-medium fs-4">ID de Jornada</th>
+                                <th class="text-dark font-medium fs-4">Estado</th>
+                                <th class="text-dark font-medium fs-4">Nombre</th>
+                                <th class="text-dark font-medium fs-4">Temas/Subtema</th>
+                                <th class="text-dark font-medium fs-4">Fecha de Realizacion</th>
+                                <th class="text-dark font-medium fs-4">Docente Principal</th>
+                                <th class="text-dark font-medium fs-4">Docente Alterno</th>
+                                <th class="text-dark font-medium fs-4">Tipo de Jornada</th>
+                                <th class="text-dark font-medium fs-4">Cantidad de Asistentes</th>
+                                <th class="text-dark font-medium fs-4">Link de Inscripcion</th>
+                                <th class="text-dark font-medium fs-4">Link de Encuesta</th>
+                                <!-- <th class="text-dark font-medium fs-4">Opciones</th> -->
+                                <td> <i class="fa-solid fa-pen-to-square text-info"></i>
+                                </td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr *ngFor='let ts of listJornadas'>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <img src="assets/images/users/calendario.png" alt="user" width="35"
+                                            class="rounded-circle">
+
+                                        <div class="ms-3">
+                                            <span class="text-muted">{{ts.codigo}}</span>
+                                            <h5 class="mb-0 font-medium">{{ts.nombre}}</h5>
+
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="fs-4">0</td>
+                                <td class="fs-4">{{ts.nombre}}</td>
+                                <td>
+                                    <h5 class="mb-0 fw-normal">{{ts.tema}}</h5>
+                                    <span class="text-muted">{{ts.subtema}}</span>
+                                </td>
+                               
+                                <td class="fs-3">{{ts.fecha}}</td>
+                                <td>
+
+                                    <span class="text-muted">Inicio:{{ts.hora_inicio}}</span><br />
+                                    <span class="text-muted">Fin:{{ts.hora_fin}}</span>
+                                </td>
+                                <td>
+                                    <h5 class="mb-0 fw-normal">{{ts.tema}}</h5>
+                                    <span class="text-muted">{{ts.subtema}}</span>
+                                </td>
+                                <td>
+                                    <h5 class="mb-0 fw-normal">{{ts.tema}}</h5>
+                                    <span class="text-muted">{{ts.subtema}}</span>
+                                </td>
+                                <td>
+                                   
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

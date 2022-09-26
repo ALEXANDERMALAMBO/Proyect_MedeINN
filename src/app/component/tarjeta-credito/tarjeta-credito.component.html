@@ -1,0 +1,103 @@
+<div class="container mt-5">
+
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="titulo" align="center">Datos Sensores de Entorno</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row mt-4">
+
+
+        <div class="col-lg-6">
+
+            <div class="card">
+                
+                    <div class="card-body">
+                        <div style="overflow: auto; width: 580px; height: 450px">
+                        <h5 class="titulo" align="center">LISTADO VARIABLES DE ENTORNO</h5>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="text-dark font-medium fs-4">Humedad</th>
+                                    <th class="text-dark font-medium fs-4">Temperatura</th>
+                                    <th class="text-dark font-medium fs-4">Calidad_Aire</th>
+                                    <th class="text-dark font-medium fs-4">Benceno</th>
+                                    <th class="text-dark font-medium fs-4">Fecha</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor='let ts of listSensor'>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <h5 class="mb-0 font-medium">{{ts.humedad}}</h5>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <h5 class="mb-0 font-medium">{{ts.temperatura}}</h5>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <h5 class="mb-0 font-medium">{{ts.calidad_Aire}}</h5>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <h5 class="mb-0 font-medium">{{ts.indice_Benzeno}}</h5>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <h5 class="mb-0 font-medium">{{ts.fecha}}</h5>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="titulo" align="center">La humedad</h5>
+                    Es la cantidad de vapor de agua que contiene el aire. Esa cantidad no es
+                    constante, sino que dependerá de diversos factores, como si ha llovido recientemente, si estamos
+                    cerca del mar, si hay plantas, etc.
+                    <h5 class="titulo" align="center">La Temperatura</h5>
+                    La temperatura atmosférica es el nivel de calor existente en el aire en un punto geográfico
+                    determinado y es la principal variable a considerar para definir los tipos climáticos:
+
+                    Macrotérmicos: altas temperaturas.
+                    Mesotérmicos: climas templados.
+                    Microtérmicos: bajas temperaturas.
+                    <h5 class="titulo" align="center">Calidad del Aire</h5>
+                    La contaminación del aire representa un importante riesgo medioambiental para la salud. Mediante la
+                    disminución de los niveles de contaminación del aire los países pueden reducir la carga de
+                    morbilidad derivada de accidentes cerebrovasculares, cánceres de pulmón y neumopatías crónicas y
+                    agudas, entre ellas el asma.
+                    <h5 class="titulo" align="center">Benceno</h5>
+                    El aire exterior contiene niveles bajos de benceno proveniente de los vapores de la gasolina, el
+                    humo secundario del tabaco y otras fuentes.
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+

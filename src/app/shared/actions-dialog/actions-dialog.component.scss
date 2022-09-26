@@ -1,0 +1,70 @@
+.sic_notification_dialog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // h2 {
+  //   margin: 0;
+  //   color: $color-text;
+  //   font-family: "Eurostyle", sans-serif;
+  //   text-transform: uppercase;
+  //   font-size: 2.5rem;
+  // }
+  .mat-icon {
+    margin-right: 2rem;
+    width: 10rem;
+    height: 10rem;
+    font-size: 10rem;
+  }
+  &.dialog_error {
+    .mat-icon {
+      color: red;
+    }
+    .govco-icon {
+      color: red;
+    }
+    .titulo{
+      color: red;
+    }
+  }
+  &.dialog_success {
+    .mat-icon {
+      color: green;
+    }
+    .govco-icon {
+      color: green;
+    }
+    .titulo{
+      color: green;
+    }
+  }
+  &.dialog_info {
+    .mat-icon {
+      color: blue;
+    }
+    .govco-icon {
+      color: blue;
+    }
+    .titulo{
+      color: blue;
+    }
+  }
+  &.dialog_warning {
+    .mat-icon {
+      color: orange;
+    }
+    .govco-icon {
+      color: orange;
+    }
+    .titulo{
+      color: orange;
+    }
+  }
+}
+.sic_notification_button {
+  justify-self: center;
+}
+
+.btn-dialog{
+  margin-right: 5%;
+}

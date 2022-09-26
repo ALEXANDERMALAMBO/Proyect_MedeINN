@@ -1,0 +1,24 @@
+.mat-drawer-container {
+  flex: 1;
+  background-color: transparent;
+}
+.mat-drawer-content {
+  @include respond(md) {
+    margin-left: 3.8rem;
+  }
+}
+
+.mat-sidenav {
+  visibility: visible !important;
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-property: left;
+  &.mat-drawer {
+    @include respond(md) {
+      left: 3.8rem;
+    }
+  }
+  &.mat-drawer.opened {
+    left: 0;
+  }
+}

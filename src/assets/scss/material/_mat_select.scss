@@ -1,0 +1,34 @@
+&.mat-form-field-type-mat-native-select {
+  .mat-form-field-infix::after {
+    width: 0.9rem;
+    height: 0.9rem;
+    border-top: 0.2rem solid $color-text;
+    border-right: 0.2rem solid $color-text;
+    border-left: 0 solid $color-text;
+    transform: rotate(135deg);
+    top: 44%;
+  }
+  &.dark-mode {
+    .mat-form-field-infix::after {
+      border-top-color: $color-green-main;
+      border-right-color: $color-green-main;
+      border-left-color: $color-green-main;
+    }
+  }
+  .mat-input-element {
+    option {
+      color: $color-text;
+    }
+  }
+}
+
+&.mat-form-field-type-mat-native-select.unselected {
+  .mat-input-element {
+    color: #9a9a9a;
+  }
+  &.dark-mode {
+    .mat-input-element {
+      color: darken($color-grey, 30%);
+    }
+  }
+}

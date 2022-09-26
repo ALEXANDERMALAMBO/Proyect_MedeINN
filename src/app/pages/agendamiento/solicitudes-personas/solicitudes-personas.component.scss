@@ -1,0 +1,96 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~open-iconic/font/css/open-iconic-bootstrap.css';
+
+.mat-card-header {
+    background-color: white !important;
+    // padding:20px !important;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    font-family: "ralewaybold" !important;
+}
+
+.mat-card {
+    padding: 0 !important;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+.mat-card-content {
+    padding: 5px !important;
+}
+
+.mat-card-title {
+    font-size: xx-large;
+}
+
+.custom-form {
+    min-width: 250px;
+    max-width: 90%;
+    padding: 2rem 3rem;
+    border-radius: 2.5rem;
+    color: black;
+    margin-top: 5rem;
+    align-items: center;
+}
+
+.custom-form input {
+    display: block;
+    width: 80%;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border: none;
+    box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.8), inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+    border: 0 none;
+    background: #ebf5fc;
+}
+
+.custom-form select {
+    display: block;
+    width: 80%;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border: none;
+    box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.8), inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+    border: 0 none;
+    background: #ebf5fc;
+}
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 2%;
+}
+
+.divisor {
+    height: 5px;
+    background-color: #002858;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.input-box {
+    margin: 2%;
+}
+
+.datos-1 {
+    margin: 2%;
+}
+button{
+  border: none;
+  border-radius: 2em;
+}
+
+.textarea-govco{
+    width: 98%;
+    margin-left: 1em;
+    
+
+}

@@ -1,0 +1,62 @@
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Jornadas</h4>
+        <h5 class="card-subtitle text-muted">Jornadas registrados en el sistema de Agendamiento SIC</h5>
+        <button class="btn btn-primary" (click)="crear()"> Crear Jornada</button>
+        <div class="table-responsive">
+          <table class="table align-middle text-nowrap">
+            <thead class="naveg">
+              <tr>
+                <th class="text-dark font-medium fs-4">Nombre/Codigo</th>
+                <th class="text-dark font-medium fs-4">Fecha</th>
+                <th class="text-dark font-medium fs-4">Hora_inicio/Hora_fin</th>
+                <th class="text-dark font-medium fs-4">Temas/Subtema</th>
+                <th class="text-dark font-medium fs-4">Opciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor='let ts of listJornadas'>
+                <td>
+                  <div class="d-flex align-items-center">
+                    <img src="assets/images/users/calendario.png" alt="user" width="35" class="rounded-circle">
+                    <div class="ms-3">
+                      <h5 class="mb-0 font-medium">{{ts.nombre}}</h5>
+                      <span class="text-muted">{{ts.codigo}}</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="fs-4">{{ts.fecha}}</td>
+                <td>
+                  <span class="text-muted">Inicio:{{ts.hora_inicio}}</span><br/>
+                  <span class="text-muted">Fin:{{ts.hora_fin}}</span>
+                </td>
+                <td>
+                  <h5 class="mb-0 fw-normal">{{ts.tema}}</h5>
+                  <span class="text-muted">{{ts.subtema}}</span>
+                </td>
+                <td >
+                  <!-- <h5 class="mb-0 fw-normal">{{ts.budget}}</h5> -->
+                  <button id="btn2" class="btn btn-outline-success" aria-label="ver" (click)="ver(ts)">
+                    <i class="bi bi-eye"></i>
+                  </button>
+                  <button id="btn2" class="btn btn-outline-primary" aria-label="Editar" (click)="editar(ts)">
+                    <i class="bi bi-pencil-square"></i>
+                  </button>
+                  <button id="btn2" class="btn btn-outline-danger" aria-label="Eliminar" (click)="eliminar(ts)">
+                    <i class="bi bi-trash"></i>
+                  </button>
+                  <button id="btn2" class="btn btn-outline-info" aria-label="participantes" (click)="verParticipantes()" *ngIf="ts.id==1">
+                    <i class="bi bi-person-check-fill"></i>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

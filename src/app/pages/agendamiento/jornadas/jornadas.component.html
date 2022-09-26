@@ -1,0 +1,32 @@
+<mat-card class="example-card">
+    <mat-card-header>
+        <mat-card-title>Nuestras Jornadas</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <div class="title-content">
+            <span>Nuestro link de insripción solo esta habilitado los primeros<strong> <br>8 días hábiles del
+                    mes</strong></span>
+        </div>
+        <div class="p-2">
+            <a class="btn-round btn-high" (click)="empresas()">Solicita nuestras Jornadas</a>
+        </div>
+        <div class="row div-banners">
+            <div class="col">
+                <a (click)="solicitudPersonas()">
+                    <img src="assets/images/banners/banner1.png" class="img-banners" />
+                </a>
+            </div>
+            <div class="col">
+                <a (click)="solicitudPersonas()">
+                    <img src="assets/images/banners/banner2.png" class="img-banners" />
+                </a>
+            </div>
+        </div>
+        <div class="grid">
+        <div class="p-2">
+            <a class="btn-round btn-high" (click)="volver()">Volver</a>
+        </div>
+
+    </div>
+    </mat-card-content>
+</mat-card>
