@@ -19,7 +19,7 @@
             <div class="form-group gov-co-form-group gov-co-valido">
                 <label>Tema de la Jornada Academica *</label>
                 <select type="text" class="form-control selectpicker" id="selector-normal" title="tema"
-                    formControlName="temaJornada" (change)="getTematica()">
+                    formControlName="temaJornada" >
                     <option *ngFor=" let tema of listTema" [value]="tema.id">{{tema.nombre}}</option>
                 </select>
             </div>
@@ -63,7 +63,6 @@
                 </select>
             </div> -->
 
-            <button (click)="agendar()" class="btn btn-round btn-high">Agendar</button>
 
 
         </div>

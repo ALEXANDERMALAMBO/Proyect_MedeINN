@@ -3,7 +3,6 @@ import { HttpClientService } from '../http-Client/http-client.service';
 import { Observable } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 //import 'rxjs/add/operator/map';
-import { Bsensor } from '../../Models/interfaces'
 @Injectable({
   providedIn: 'root'
 })

@@ -6,11 +6,8 @@ import { MatDialog } from '@angular/material/dialog';
 import { ActionsDialogComponent } from '../../shared/actions-dialog/actions-dialog.component';
 
 import { SpinnerService } from '../../core/services/spinner/spinner.service';
-import { ValoresCatalogosService } from '../../core/services/valores-catalogos/valores-catalogos.service';
 import { FormControl, FormGroup } from '@angular/forms';
 
-import { EmpresasService } from '../../core/services/empresas/empresas.service'
-import { SolicitudesEmpresasService } from '../../core/services/solicitudes-empresas/solicitudes-empresas.service';
 
 
 
@@ -36,11 +33,8 @@ export class PlaneadorComponent implements OnInit {
   public options: any;
 
   constructor(
-    private _solicitudService: SolicitudesEmpresasService,
-    private _empresasService: EmpresasService,
 
     private _spinner: SpinnerService,
-    private _valoresCatalogosService: ValoresCatalogosService,
     private _dialog: MatDialog,
   ) {
     this.fechaSeleccionada = "";
@@ -69,22 +63,7 @@ export class PlaneadorComponent implements OnInit {
 
 
 
-    // this.events = [{
-    //   title: "Jornada JOR-001",
-    //   date: "2022-08-15",
-    //   allDay: false
-    // },
-    // {
-    //   title: "Jornada JOR-002",
-    //   date: "2022-08-14",
-    //   allDay: false
-    // }];
-
      
-
-    this.getTema();
-    this.getPublico();
-    this.getParticipantes();
 
 
     let fechaActual = new Date()
@@ -127,36 +106,7 @@ export class PlaneadorComponent implements OnInit {
  
 
 
-  getTema() {
-    this._spinner.show()
-    this._valoresCatalogosService.obtenerByCode("TEMAS").subscribe((data: any) => {
-      // console.log(data);
-      this._spinner.hide();
-      this.listTema = data;
-    })
-  }
-  getTematica() {
-    this._spinner.show()
-    let dependencia = this.EmpresaForm.controls["temaJornada"].value
-    this._valoresCatalogosService.obtenerByDependencia(dependencia).subscribe((data: any) => {
-      this._spinner.hide();
-      this.listTematicas = data;
-    })
-  }
-  getPublico() {
-    this._spinner.show()
-    this._valoresCatalogosService.obtenerByCode("PUBLICO").subscribe((data: any) => {
-      this._spinner.hide()
-      this.listPublico = data;
-    })
-  }
-  getParticipantes() {
-    this._spinner.show()
-    this._valoresCatalogosService.obtenerByCode("NUM_PARTICIPANTES").subscribe((data: any) => {
-      this._spinner.hide()
-      this.listnuparticipantes = data;
-    })
-  }
+ 
 
 
 
@@ -222,32 +172,9 @@ export class PlaneadorComponent implements OnInit {
 
 
 
-  agendar(){
-    
-        var dataSolicitud = {
-          temaJornada: this.EmpresaForm.controls["temaJornada"].value,
-          tematicas: this.EmpresaForm.controls["tematicas"].value,
-          idPublico: this.EmpresaForm.controls["idPublico"].value,
-          perfil: this.EmpresaForm.controls["perfil"].value,
-          numeroParticipantes: this.EmpresaForm.controls["numeroParticipantes"].value,
-          id_jornada: "1",
-          enabled: 1,
-          fecha: this.fechaSeleccionada,
-        }
-        console.log(dataSolicitud);
+  
         
-        this._solicitudService.registrar(dataSolicitud).subscribe((respsol: any) => {
-          this._spinner.hide()
-          console.log(respsol);
-          let dialogConfirm = this._dialog.open(ActionsDialogComponent, {
-            data: {
-              message: `registro exitoso`,
-              content: `su solicitud ha sido creada exitosamente`,
-              severity: 'success',
-            },
-          });
-          // window.location.href = "https://www.sic.gov.co/";
-        })
+       
 
       }
 
@@ -256,4 +183,4 @@ export class PlaneadorComponent implements OnInit {
   
 
 
-}
+
