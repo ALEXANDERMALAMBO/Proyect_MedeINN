@@ -25,11 +25,6 @@ import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
 import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
 import { HeaderComponent } from './layouts/header/header.component';
 import { LoginComponent } from './pages/login/login.component';
-import { TerminosYCondicionesComponent } from './pages/agendamiento/terminos-y-condiciones/terminos-y-condiciones.component';
-import { JornadasComponent } from './pages/agendamiento/jornadas/jornadas.component';
-import { ConsultaEmpresaComponent } from './pages/agendamiento/consulta-empresa/consulta-empresa.component';
-import { PoliticaPrivacidadComponent } from './pages/agendamiento/politica-privacidad/politica-privacidad.component';
-import { FormularioInscripcionComponent } from './pages/agendamiento/formulario-inscripcion/formulario-inscripcion.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { SpinnerComponent as SpinnerGeneralComponent } from './component/spinner/spinner.component';
 import { ActionsDialogComponent } from './shared/actions-dialog/actions-dialog.component';
@@ -41,29 +36,16 @@ import {
   NgxMatNativeDateModule,
   NgxMatTimepickerModule
 } from '@angular-material-components/datetime-picker';
-import { SolicitudesPersonasComponent } from './pages/agendamiento/solicitudes-personas/solicitudes-personas.component';
-import { CronogramaSolicitudComponent } from './pages/agendamiento/cronograma-solicitud/cronograma-solicitud.component';
 
-import { FullCalendarModule } from 'primeng/fullcalendar';
+//import { FullCalendarModule } from 'primeng/fullcalendar';
 import { NgChartsModule } from 'ng2-charts';
-import {  GraficalinealService} from './core/services/graficalineal/graficalineal.service';
-
-
-//import { GraficalinealService } from 'app/core/services/graficalineal/graficalineal.service';
-
-
-//import { TarjetaCreditoComponent } from './component/tarjeta-credito/tarjeta-credito.component';
-//import { UsuariosComponent } from './usuarios/usuarios.component';
-
-
-
 
 
 
 
 
 import { ToastrModule } from 'ngx-toastr';
-//import { LineaComponent } from './component/linea/linea.component';
+
 
 
 
@@ -84,19 +66,12 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     SidebarComponent,
     HeaderComponent,
     LoginComponent,
-    TerminosYCondicionesComponent,
-    JornadasComponent,
-    ConsultaEmpresaComponent,
-    PoliticaPrivacidadComponent,
-    FormularioInscripcionComponent,
+ 
     SpinnerGeneralComponent,
     ActionsDialogComponent,
-    SolicitudesPersonasComponent,
-    CronogramaSolicitudComponent,
-
+ 
     
-   // TarjetaCreditoComponent,
-    //UsuariosComponent
+   
   ],
   imports: [
     CommonModule,
@@ -120,7 +95,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     NgxMatDatetimePickerModule,
     NgxMatTimepickerModule,
     NgxMatNativeDateModule,
-    FullCalendarModule,
+   // FullCalendarModule,
     ToastrModule.forRoot(),
     NgChartsModule,
     

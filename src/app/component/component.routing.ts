@@ -11,7 +11,6 @@ import { TableComponent } from './table/table.component';
 import { DocentesComponent } from './docentes/docentes.component';
 import { JornadasComponent } from './jornadas/jornadas.component';
 import { PlaneadorComponent } from './planeador/planeador.component';
-import { SolicitudesEmpresasComponent } from './solicitudes-empresas/solicitudes-empresas.component';
 import {UsuariosComponent} from './usuarios/usuarios.component';
 import {FormularioUsuariosComponent} from './formulario-usuarios/formulario-usuarios.component';
 import { MatrizGestionComponent } from './matriz-gestion/matriz-gestion.component';
@@ -65,10 +64,7 @@ export const ComponentsRoutes: Routes = [
         path: 'jornadas',
         component: JornadasComponent
       },
-      {
-        path: 'solicitudes',
-        component: SolicitudesEmpresasComponent
-      },
+     
       {
         path: 'planeador',
         component: PlaneadorComponent

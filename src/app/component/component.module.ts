@@ -16,7 +16,6 @@ import { DocentesComponent } from './docentes/docentes.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { JornadasComponent } from './jornadas/jornadas.component';
-import { SolicitudesEmpresasComponent } from './solicitudes-empresas/solicitudes-empresas.component';
 import { PlaneadorComponent } from './planeador/planeador.component';
 
 import { FullCalendarModule } from 'primeng/fullcalendar';
@@ -73,8 +72,6 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
  
    
     JornadasComponent,
-   
-    SolicitudesEmpresasComponent,
   
     PlaneadorComponent,
     UsuariosComponent,
