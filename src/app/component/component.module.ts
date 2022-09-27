@@ -12,16 +12,11 @@ import { NgbdnavBasicComponent } from './nav/nav.component';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { CardsComponent } from './card/card.component';
 import { TableComponent } from "./table/table.component";
-import { EmpresasComponent } from './empresas/empresas.component';
 import { DocentesComponent } from './docentes/docentes.component';
 import { MatIconModule } from '@angular/material/icon';
-import { FormularioEmpresaComponent } from './formulario-empresa/formulario-empresa.component';
 import { MatCardModule } from '@angular/material/card';
-import { FormularioDocenteComponent } from './formulario-docente/formulario-docente.component';
 import { JornadasComponent } from './jornadas/jornadas.component';
-import { FormularioJornadasComponent } from './formulario-jornadas/formulario-jornadas.component';
 import { SolicitudesEmpresasComponent } from './solicitudes-empresas/solicitudes-empresas.component';
-import { FormularioInscritosComponent } from './formulario-inscritos/formulario-inscritos.component';
 import { PlaneadorComponent } from './planeador/planeador.component';
 
 import { FullCalendarModule } from 'primeng/fullcalendar';
@@ -31,8 +26,16 @@ import { FormularioUsuariosComponent } from './formulario-usuarios/formulario-us
 import { MatrizGestionComponent } from './matriz-gestion/matriz-gestion.component';
 import { TarjetaCreditoComponent } from './tarjeta-credito/tarjeta-credito.component';
 import { GraficalinealComponent } from './graficalineal/graficalineal.component';
-import { LineaComponent } from './linea/linea.component';
+import { LineaComponent } from './Lineal/linea/linea.component';
 import { NgChartsModule } from 'ng2-charts';
+import { LineaHumedadComponent } from './Lineal/linea-humedad/linea-humedad.component';
+import { LineaCalidadAireComponent } from './Lineal/linea-calidad-aire/linea-calidad-aire.component';
+import { LineaBenzenoComponent } from './Lineal/linea-benzeno/linea-benzeno.component';
+import { BtempComponent } from './Barras/btemp/btemp.component';
+import { BHumComponent } from './Barras/bhum/bhum.component';
+import { BAireComponent } from './Barras/baire/baire.component';
+import { BBenComponent } from './Barras/bben/bben.component';
+import { GraficabarrasComponent } from './graficabarras/graficabarras.component';
 //import { GraficalinealService } from 'app/core/services/graficalineal/graficalineal.service';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
@@ -65,14 +68,14 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     ButtonsComponent,
     CardsComponent,
     TableComponent,
-    EmpresasComponent,
+   
     DocentesComponent,
-    FormularioEmpresaComponent,
-    FormularioDocenteComponent,
+ 
+   
     JornadasComponent,
-    FormularioJornadasComponent,
+   
     SolicitudesEmpresasComponent,
-    FormularioInscritosComponent,
+  
     PlaneadorComponent,
     UsuariosComponent,
     FormularioUsuariosComponent,
@@ -80,6 +83,14 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     TarjetaCreditoComponent,
     GraficalinealComponent,
     LineaComponent,
+    LineaHumedadComponent,
+    LineaCalidadAireComponent,
+    LineaBenzenoComponent,
+    BtempComponent,
+    BHumComponent,
+    BAireComponent,
+    BBenComponent,
+    GraficabarrasComponent,
    
   ]
 

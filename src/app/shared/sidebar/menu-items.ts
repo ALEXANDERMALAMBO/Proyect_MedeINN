@@ -30,7 +30,7 @@ export const ROUTES: RouteInfo[] = [
   },
 
   {
-    path: '/dashboard/component/jornadas',
+    path: '/dashboard/component/graficabarras',
     title: 'Grafica de Barras',
     icon: 'bi bi-calendar-check-fill',
     class: '',

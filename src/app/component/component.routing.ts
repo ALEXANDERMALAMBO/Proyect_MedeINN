@@ -8,20 +8,16 @@ import { BadgeComponent } from './badge/badge.component';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { CardsComponent } from './card/card.component';
 import { TableComponent } from './table/table.component';
-import { EmpresasComponent } from './empresas/empresas.component';
 import { DocentesComponent } from './docentes/docentes.component';
 import { JornadasComponent } from './jornadas/jornadas.component';
 import { PlaneadorComponent } from './planeador/planeador.component';
-import { FormularioEmpresaComponent } from './formulario-empresa/formulario-empresa.component';
-import { FormularioDocenteComponent } from './formulario-docente/formulario-docente.component';
 import { SolicitudesEmpresasComponent } from './solicitudes-empresas/solicitudes-empresas.component';
-import { FormularioJornadasComponent } from './formulario-jornadas/formulario-jornadas.component';
-import { FormularioInscritosComponent } from './formulario-inscritos/formulario-inscritos.component';
 import {UsuariosComponent} from './usuarios/usuarios.component';
 import {FormularioUsuariosComponent} from './formulario-usuarios/formulario-usuarios.component';
 import { MatrizGestionComponent } from './matriz-gestion/matriz-gestion.component';
 import { TarjetaCreditoComponent } from './tarjeta-credito/tarjeta-credito.component';
 import { GraficalinealComponent } from './graficalineal/graficalineal.component';
+import { GraficabarrasComponent } from './graficabarras/graficabarras.component';
 
 
 export const ComponentsRoutes: Routes = [
@@ -60,37 +56,18 @@ export const ComponentsRoutes: Routes = [
         path: 'buttons',
         component: ButtonsComponent
       },
-      {
-        path: 'empresas',
-        component: EmpresasComponent
-      },
-      {
-        path: 'formulario-empresas/:idAction/:idEmpresa',
-        component: FormularioEmpresaComponent
-      },
+      
       {
         path: 'docentes',
         component: DocentesComponent
-      },
-      {
-        path: 'formulario-docentes/:idAction/:idDocente',
-        component: FormularioDocenteComponent
       },
       {
         path: 'jornadas',
         component: JornadasComponent
       },
       {
-        path: 'formulario-jornadas/:idAction/:idJornada',
-        component: FormularioJornadasComponent
-      },
-      {
         path: 'solicitudes',
         component: SolicitudesEmpresasComponent
-      },
-      {
-        path: 'listado-inscritos',
-        component: FormularioInscritosComponent
       },
       {
         path: 'planeador',
@@ -118,6 +95,10 @@ export const ComponentsRoutes: Routes = [
       {
         path: 'graficalineal',
         component: GraficalinealComponent
+      },
+      {
+        path: 'graficabarras',
+        component: GraficabarrasComponent
       },
     
     ]
