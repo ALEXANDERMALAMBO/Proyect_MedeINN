@@ -3,8 +3,8 @@
         <div class="card">
             <div class="card-body">
                 <h4 class="card-title">Usuarios</h4>
-                <h5 class="card-subtitle text-muted">Usuarios registrados en el sistema de Agendamiento SIC</h5>
-                <button class="btn btn-primary" (click)="crear()"> Crear Usuario</button>
+                <h5 class="card-subtitle text-muted">Usuarios registrados </h5>
+            
                 <div class="table-responsive">
                     <table class="table align-middle text-nowrap">
 
@@ -12,12 +12,10 @@
                             <tr>
                                 <th class="text-dark font-medium fs-4">Name</th>
                                 <th class="text-dark font-medium fs-4">Email</th>
-                                <th class="text-dark font-medium fs-4">Rol</th>
-                                <th class="text-dark font-medium fs-4">Password</th>
-                                <th class="text-dark font-medium fs-4">Fecha Creación</th>
+                                <th type="Password" class="text-dark font-medium fs-4">Password</th>
                                 <th class="text-dark font-medium fs-4">Opciones</th>
-                                <td> <i class="fa-solid fa-pen-to-square text-info"></i>
-                                </td>
+
+
                             </tr>
                         </thead>
 
@@ -25,43 +23,94 @@
                             <tr *ngFor='let ts of listUsuarios'>
                                 <td>
                                     <div class="d-flex align-items-center">
-                                        <img src="assets/images/users/docente.jpg" alt="user" width="45"
-                                            class="rounded-circle">
+
                                         <div class="ms-3">
-                                            <h5 class="mb-0 font-medium">{{ts.name}}</h5>
+                                            <h5 class="mb-0 font-medium">{{ts.nombre}}</h5>
                                             <span class="text-muted"></span>
                                         </div>
                                     </div>
                                 </td>
                                 <td class="fs-4">
-                                   {{ts.email}}
+                                    {{ts.email}}
                                 </td>
+
                                 <td>
-                                    ADMIN
+                                    {{ts.pass}}
                                 </td>
-                                <td>
-                                    ************
-                                </td>
-                                <td class="fs-4">
-                                    {{ts.created_at}}
-                                 </td>
-                                <td>
-                                    <!-- <h5 class="mb-0 fw-normal">{{ts.budget}}</h5> -->
-                                    <button id="btn1" class="btn btn-outline-success" aria-label="ver">
-                                        <i class="bi bi-eye"></i>
-                                    </button>
-                                    <button id="btn1" class="btn btn-outline-primary" aria-label="Editar">
-                                        <i class="bi bi-pencil-square"></i>
-                                    </button>
-                                    <button id="btn1" class="btn btn-outline-danger" aria-label="Eliminar">
-                                        <i class="bi bi-trash"></i>
-                                    </button>
-                                </td>
+
+
+                                <button id="btn1" class="btn btn-outline-success" aria-label="ver">
+                                    <i class="bi bi-eye"></i>
+                                </button>
+                                <button id="btn1" class="btn btn-outline-primary" (click)="editarUsuario(ts)"
+                                    aria-label="">
+                                    <i class="bi bi-pencil-square"></i>
+                                </button>
+                                <button id="btn1" class="btn btn-outline-danger" (click)="eliminarUsuario(ts.id)"
+                                    aria-label="Eliminar">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
+
+
+
+<div class="container mt-5">
+    <div class="row mt-4">
+        <div class="col-lg-8 offset-lg-2">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="titulo">Crear Usuario</h3>
+                    <h5 class="titulo"> INGRESE SU INFORMACION</h5>
+                    <form [formGroup]="form" (ngSubmit)="guardarUsuario()">
+
+                        <div class="input-group mb-3 input-group-lg">
+                            <span class="input-group-text">
+                                <i class="fa-solid fa-person" [class.green-icon]="this.form.get('nombre')?.valid"
+                                    [class.red-icon]="this.form.get('nombre')?.invalid && this.form.get('nombre')?.touched"></i>
+
+                            </span>
+                            <input formControlName="nombre" type="text" class="form-control"
+                                placeholder="Nombre y apellido">
+                        </div>
+                        <div class="input-group mb-3 input-group-lg">
+                            <span class="input-group-text">
+                                <i class="fa-solid fa-envelopes-bulk" [class.green-icon]="this.form.get('email')?.valid"
+                                    [class.red-icon]="this.form.get('email')?.invalid && this.form.get('email')?.touched"></i>
+                            </span>
+                            <input formControlName="email" type="text" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <div class="input-group mb-3 input-group-lg">
+                                    <span class="input-group-text">
+                                        <i class="fa-solid fa-key" [class.green-icon]="this.form.get('pass')?.valid"
+                                            [class.red-icon]="this.form.get('pass')?.invalid && this.form.get('pass')?.touched"></i>
+                                    </span>
+                                    <input formControlName="pass" type="password" class="form-control"
+                                        placeholder="Contraseña">
+                                </div>
+
+                            </div>
+
+
+                            <button [disabled]="this.form.invalid" type="submit" class="btn btn-success btn-lg">
+                                <i class="fa-solid fa-floppy-disk"></i> Guardar</button>
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>

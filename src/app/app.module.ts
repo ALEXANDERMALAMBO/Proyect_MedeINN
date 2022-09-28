@@ -37,13 +37,7 @@ import {
   NgxMatTimepickerModule
 } from '@angular-material-components/datetime-picker';
 
-//import { FullCalendarModule } from 'primeng/fullcalendar';
 import { NgChartsModule } from 'ng2-charts';
-
-
-
-
-
 import { ToastrModule } from 'ngx-toastr';
 
 

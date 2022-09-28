@@ -21,7 +21,6 @@ import { PlaneadorComponent } from './planeador/planeador.component';
 import { FullCalendarModule } from 'primeng/fullcalendar';
 import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
 import { UsuariosComponent } from './usuarios/usuarios.component';
-import { FormularioUsuariosComponent } from './formulario-usuarios/formulario-usuarios.component';
 import { MatrizGestionComponent } from './matriz-gestion/matriz-gestion.component';
 import { TarjetaCreditoComponent } from './tarjeta-credito/tarjeta-credito.component';
 import { GraficalinealComponent } from './graficalineal/graficalineal.component';
@@ -75,7 +74,6 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   
     PlaneadorComponent,
     UsuariosComponent,
-    FormularioUsuariosComponent,
     MatrizGestionComponent,
     TarjetaCreditoComponent,
     GraficalinealComponent,

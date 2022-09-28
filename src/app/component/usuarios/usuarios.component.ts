@@ -5,6 +5,12 @@ import { UsersService } from '../../core/services/users/users.service';
 import { SpinnerService } from '../../core/services/spinner/spinner.service';
 import { ActionsDialogComponent } from '../../shared/actions-dialog/actions-dialog.component';
 import { MatDialog } from '@angular/material/dialog';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { __values } from 'tslib';
+import { Observable } from 'rxjs';
+import { ToastrService } from 'ngx-toastr';
+
+
 
 
 @Component({
@@ -14,56 +20,120 @@ import { MatDialog } from '@angular/material/dialog';
   styleUrls: ['./usuarios.component.scss']
 })
 export class UsuariosComponent implements OnInit {
+  listUsuarios: any[]=[];
+  accion='Agregar';
+  form: FormGroup;
+  id: number | undefined;
 
-  listUsuarios: any[] = [];
-  constructor(
-    private _spinner: SpinnerService,
-    private _dialog: MatDialog,
-    private _router: Router,
-    private _usersService: UsersService,
-  ) { }
 
+  constructor(private router:Router,private _usuarioService: UsersService
+    ,private fb:FormBuilder, private toastr: ToastrService) { 
+  this.form = this.fb.group(
+  {
+    nombre:['',Validators.required],
+    email:['',[Validators.required]],
+    pass:['',[Validators.required]],
+  }
+  )
+}
   ngOnInit(): void {
-    this.getUsuarios();
+    this.obtenerUsuario();
   }
 
-  getUsuarios() {
-    this._spinner.show()
-    this._usersService.listarUsuarios().subscribe((data: any) => {
-      this._spinner.hide()
-      this.listUsuarios = data.data;
-    })
-  }
+  obtenerUsuario(){
 
-  ver(data: any) {
-    var idAction = environment.idVer;
-    this._router.navigate([`/dashboard/component/formulario-docentes/${idAction}/${data.id}`]);
-  }
-  editar(data: any) {
-    var idAction = environment.idEditar;
-    this._router.navigate([`/dashboard/component/formulario-docentes/${idAction}/${data.id}`]);
-  }
-  crear() {
-    var idAction = environment.idCrear;
-    this._router.navigate([`/dashboard/component/formulario-usuarios/${idAction}/${0}`]);
-  }
-  eliminar(data: any) {
-    let dialogConfirm = this._dialog.open(ActionsDialogComponent, {
-      data: {
-        message: `Desea eliminar este registro`,
-        content: ``,
-        severity: 'warning',
-      },
+    this._usuarioService.getListUsuarios().subscribe
+    ({
+     next: data=>{
+        console.log(data);
+        this.listUsuarios=data;
+    },
+    error: err=>{
+        console.log(err);
+    }
     });
-    dialogConfirm.afterClosed().subscribe(r => {
-      if (r === true) {
-        this._spinner.show()
-        this._usersService.eliminar(data.id).subscribe(r => {
-          this._spinner.hide()
-          console.log(r);
-          this.getUsuarios();
-        })
-      }
-    })
   }
+
+  guardarUsuario(){
+ 
+
+    const tarjeta:any ={
+      nombre: this.form.get('nombre')?.value,
+      email: this.form.get('email')?.value,
+      pass: this.form.get('pass')?.value,
+    
+    }
+
+    if(this.id==undefined){
+      this._usuarioService.saveUsuarios(tarjeta).subscribe
+      ({
+       next: data=>{
+        this.toastr.success('El Usuario fue registradoUsuario con exito!', 'Usuario Registrado!');
+          this.listUsuarios=data;
+          this.obtenerUsuario();
+          this.form.reset();
+      },
+      error: err=>{
+        this.toastr.error('Opss... Ha ocurrido un error','Error');
+        console.log(err);
+      }
+      });
+      //agregamos nueva tarjeta
+     /* this._usuarioService.saveUsuarios(tarjeta).subscribe(data=>{
+        this.toastr.success('El Usuario fue registradoUsuario con exito!', 'Usuario Registrado!');
+        this.obtenerUsuario();
+        this.form.reset();
+      }, error=>{
+        this.toastr.error('Opss... Ha ocurrido un error','Error');
+        console.log(error);
+      }
+      )
+*/
+    }else{
+      //editamos tarjeta
+      tarjeta.id = this.id;
+      this._usuarioService.updateUsuarios(this.id,tarjeta).subscribe(data=>{
+        this.form.reset();
+        this.accion='Agregar';
+        this.id = undefined;
+        this.toastr.info('Usuario fue actualizado con exito!','Usuario Actualizado');
+        this.obtenerUsuario();
+      },error=>{
+        console.log(error);
+      })
+
+
+    }
+   
+    //console.log(tarjeta);
+  }
+
+  eliminarUsuario(id: number){
+this._usuarioService.deleteUsuarios(id).subscribe(data=>{
+  
+this.toastr.error('El Usuario fue eliminado con exito!','Usuario eliminado');
+this.obtenerUsuario();
+},error=>{
+console.log(error);
+}
+
+)
+}
+
+
+editarUsuario(tarjeta: any){
+this.accion="Editar";
+this.id=tarjeta.id;
+this.form.patchValue({nombre: tarjeta.nombre,
+pass: tarjeta.pass,
+email: tarjeta.email,
+
+}
+)
+
+
+}
+
+
+
 }

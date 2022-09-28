@@ -1,43 +1,26 @@
 import { Injectable } from '@angular/core';
-//import { environment } from 'environments/environment';
-import { environment } from '../../../../environments/environment';
 import { HttpClient } from '@angular/common/http';
-
+import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
 export class UsersService {
 
-  baseApi = environment.urlApi;
-  prefijo = 'usuarios';
+  baseApi = "https://localhost:7208/"
+  prefijo = 'api/Login/'
   constructor(private http: HttpClient) {}
 
-  listarUsuarios() {
-    return this.http.get(`${this.baseApi}/usuarios`);
+  getListUsuarios(): Observable<any>{
+    return this.http.get(this.baseApi + this.prefijo);
   }
-
-  obtener() {
-    return this.http.get(`${this.baseApi}/user`);
+  deleteUsuarios(id: number): Observable<any>{
+    return this.http.delete(this.baseApi + this.prefijo+id);
   }
-
-  registrar(user: any) {
-    return this.http.post(`${this.baseApi}/usuarios`, user);
+  saveUsuarios(tarjeta: any):Observable<any>{
+    return this.http.post(this.baseApi + this.prefijo,tarjeta)
   }
-
-  // actualizar(user: any) {
-  //   return this.http.put(`${this.baseApi}/user`, user);
-  // }
-
-  actualizar(usuario: any, id: string | any) {
-    return this.http.put(`${this.baseApi}/${this.prefijo}/${id}`, usuario);
+  updateUsuarios(id: number, tarjeta: any):Observable<any>{
+    return this.http.put(this.baseApi+this.prefijo+id,tarjeta)
   }
-
-
-  eliminar(id: string | number) {
-    return this.http.delete(`${this.baseApi}/user?id=${id}`);
-  }
-
-  obtenerById(id: string | any) {
-    return this.http.get(`${this.baseApi}/${this.prefijo}/${id}`);
-  }
+  
 }

@@ -12,7 +12,6 @@ import { DocentesComponent } from './docentes/docentes.component';
 import { JornadasComponent } from './jornadas/jornadas.component';
 import { PlaneadorComponent } from './planeador/planeador.component';
 import {UsuariosComponent} from './usuarios/usuarios.component';
-import {FormularioUsuariosComponent} from './formulario-usuarios/formulario-usuarios.component';
 import { MatrizGestionComponent } from './matriz-gestion/matriz-gestion.component';
 import { TarjetaCreditoComponent } from './tarjeta-credito/tarjeta-credito.component';
 import { GraficalinealComponent } from './graficalineal/graficalineal.component';
@@ -72,14 +71,6 @@ export const ComponentsRoutes: Routes = [
       {
         path: 'usuarios',
         component: UsuariosComponent
-      },
-      {
-        path: 'formulario-usuarios',
-        component: FormularioUsuariosComponent
-      },
-      {
-        path: 'formulario-usuarios/:idAction/:idUsuarios',
-        component: FormularioUsuariosComponent
       },
       {
         path: 'matrizgestion',
