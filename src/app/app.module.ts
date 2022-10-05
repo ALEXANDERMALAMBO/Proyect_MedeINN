@@ -89,7 +89,6 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     NgxMatDatetimePickerModule,
     NgxMatTimepickerModule,
     NgxMatNativeDateModule,
-   // FullCalendarModule,
     ToastrModule.forRoot(),
     NgChartsModule,
     

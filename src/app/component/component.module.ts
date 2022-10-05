@@ -16,9 +16,7 @@ import { DocentesComponent } from './docentes/docentes.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { JornadasComponent } from './jornadas/jornadas.component';
-import { PlaneadorComponent } from './planeador/planeador.component';
 
-import { FullCalendarModule } from 'primeng/fullcalendar';
 import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { MatrizGestionComponent } from './matriz-gestion/matriz-gestion.component';
@@ -53,7 +51,6 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     NgbModule,
     MatIconModule,
     MatCardModule,
-    FullCalendarModule,
     NgChartsModule,
     CommonModule,
     FormsModule,
@@ -72,7 +69,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
    
     JornadasComponent,
   
-    PlaneadorComponent,
+    
     UsuariosComponent,
     MatrizGestionComponent,
     TarjetaCreditoComponent,

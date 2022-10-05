@@ -10,7 +10,6 @@ import { CardsComponent } from './card/card.component';
 import { TableComponent } from './table/table.component';
 import { DocentesComponent } from './docentes/docentes.component';
 import { JornadasComponent } from './jornadas/jornadas.component';
-import { PlaneadorComponent } from './planeador/planeador.component';
 import {UsuariosComponent} from './usuarios/usuarios.component';
 import { MatrizGestionComponent } from './matriz-gestion/matriz-gestion.component';
 import { TarjetaCreditoComponent } from './tarjeta-credito/tarjeta-credito.component';
@@ -62,11 +61,6 @@ export const ComponentsRoutes: Routes = [
       {
         path: 'jornadas',
         component: JornadasComponent
-      },
-     
-      {
-        path: 'planeador',
-        component: PlaneadorComponent
       },
       {
         path: 'usuarios',
